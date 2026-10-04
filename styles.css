@@ -1,27 +1,25 @@
 /* =========================================================
-   PV. — PORTAFOLIO
-   CSS MAESTRO
+   PV. PORTFOLIO — CSS FINAL
+   Manrope + Instrument Serif
 ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --cream: #fff8f3;
-  --cream-soft: #fff2ec;
-  --pink: #f6cfd4;
-  --pink-soft: #fde4e5;
-  --coral: #e97f87;
-  --burgundy: #87052c;
-  --burgundy-dark: #68001f;
-  --text: #51565c;
+  --cream-2: #fff1eb;
+  --pink: #f3b8c1;
+  --pink-strong: #ea7d88;
+  --wine: #85052d;
+  --wine-dark: #650020;
+  --text: #4f555b;
   --white: #ffffff;
 
-  --radius-xl: 44px;
-  --radius-lg: 30px;
-  --radius-md: 22px;
+  --radius: 30px;
+  --radius-small: 20px;
 
-  --shadow:
-    0 18px 55px rgba(104, 0, 31, 0.08);
+  --shadow: 0 18px 50px rgba(101, 0, 32, .08);
 }
-
 
 /* =========================================================
    RESET
@@ -38,17 +36,19 @@ html {
 }
 
 body {
+  margin: 0;
   background: var(--cream);
   color: var(--text);
   font-family: "Manrope", sans-serif;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
   overflow-x: hidden;
 }
 
 img,
 video {
-  display: block;
   width: 100%;
+  display: block;
 }
 
 a {
@@ -56,35 +56,36 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   font: inherit;
 }
 
-strong {
-  font-weight: 800;
-}
-
 .container {
   width: min(1180px, calc(100% - 48px));
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .section {
   position: relative;
-  padding: 115px 0;
+  padding: 120px 0;
 }
 
-
 /* =========================================================
-   TIPOGRAFÍA GENERAL
+   TIPOGRAFÍA
 ========================================================= */
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--burgundy);
-  line-height: 1.06;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--wine);
+  line-height: 1.05;
 }
 
 h1,
@@ -93,26 +94,32 @@ h2 {
   letter-spacing: -0.055em;
 }
 
+h3,
+h4 {
+  font-weight: 700;
+}
+
 h1 span,
 h2 span,
 h3 span,
 h4 span {
-  color: var(--coral);
   font-family: "Instrument Serif", serif;
-  font-style: italic;
   font-weight: 400;
+  font-style: italic;
   letter-spacing: -0.02em;
+  color: var(--pink-strong);
 }
 
 .eyebrow {
   margin-bottom: 24px;
-  color: var(--burgundy);
-  font-size: 0.75rem;
+  color: var(--wine);
+  font-family: "Manrope", sans-serif;
+  font-size: .72rem;
+  line-height: 1.3;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: .2em;
   text-transform: uppercase;
 }
-
 
 /* =========================================================
    NAVEGACIÓN
@@ -122,76 +129,63 @@ h4 span {
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  background: rgba(255, 248, 243, 0.9);
-  border-bottom: 1px solid rgba(135, 5, 44, 0.08);
-
+  background: rgba(255, 248, 243, .94);
+  border-bottom: 1px solid rgba(133, 5, 45, .07);
   backdrop-filter: blur(18px);
 }
 
 .nav {
-  min-height: 78px;
-
+  min-height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  color: var(--burgundy);
   font-family: "Instrument Serif", serif;
-  font-size: 2.15rem;
   font-style: italic;
+  font-size: 2.1rem;
   line-height: 1;
+  color: var(--wine);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
 }
 
 .nav-links a {
-  font-size: 0.84rem;
-  font-weight: 600;
-  transition: color 0.2s ease;
+  font-size: .78rem;
+  font-weight: 700;
 }
 
 .nav-links a:hover {
-  color: var(--burgundy);
+  color: var(--wine);
 }
 
 .menu-toggle {
   display: none;
   border: 0;
   background: transparent;
-  color: var(--burgundy);
-  font-size: 1.6rem;
-  cursor: pointer;
+  color: var(--wine);
+  font-size: 1.5rem;
 }
-
 
 /* =========================================================
    BOTONES
 ========================================================= */
 
 .button {
-  min-height: 56px;
-  padding: 0 29px;
-
+  min-height: 54px;
+  padding: 0 27px;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
   border-radius: 999px;
-
-  font-size: 0.9rem;
+  font-size: .85rem;
   font-weight: 700;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
+  transition: .25s ease;
 }
 
 .button:hover {
@@ -199,82 +193,54 @@ h4 span {
 }
 
 .button-primary {
-  background: var(--burgundy);
-  color: var(--white);
-}
-
-.button-primary:hover {
-  background: var(--burgundy-dark);
-  box-shadow: var(--shadow);
+  background: var(--wine);
+  color: white;
 }
 
 .button-secondary {
-  color: var(--burgundy);
-  border: 1px solid rgba(135, 5, 44, 0.3);
+  color: var(--wine);
+  border: 1px solid rgba(133, 5, 45, .3);
 }
-
 
 /* =========================================================
    01 — HOME
 ========================================================= */
 
 .hero {
-  min-height: calc(100vh - 78px);
-
+  min-height: calc(100vh - 76px);
   display: flex;
   align-items: center;
-
   overflow: hidden;
 }
 
 .hero::before {
   content: "";
-
   position: absolute;
-  top: -230px;
-  right: -190px;
-
-  width: 610px;
-  height: 610px;
-
+  width: 570px;
+  height: 570px;
+  right: -160px;
+  top: -180px;
   border-radius: 50%;
-
   background: var(--pink);
-  opacity: 0.45;
-
-  z-index: -2;
-}
-
-.hero::after {
-  content: "";
-
-  position: absolute;
-  left: -10%;
-  right: -10%;
-  bottom: -215px;
-
-  height: 315px;
-
-  border-radius: 50% 50% 0 0;
-
-  background: var(--pink-soft);
-
-  z-index: -2;
+  opacity: .38;
+  z-index: -1;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-
-  gap: 75px;
-
+  grid-template-columns: 1.08fr .92fr;
+  gap: 80px;
   align-items: center;
 }
 
-.hero h1 {
-  max-width: 720px;
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
 
-  font-size: clamp(3.6rem, 6.3vw, 6.7rem);
+.hero h1 {
+  max-width: 750px;
+  font-size: clamp(3.6rem, 6.2vw, 6.6rem);
 }
 
 .hero h1 span {
@@ -282,145 +248,97 @@ h4 span {
 }
 
 .hero-role {
-  margin-top: 30px;
-
-  color: var(--burgundy);
-
-  font-size: 0.86rem;
+  margin-top: 28px;
+  color: var(--wine);
+  font-size: .82rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: .06em;
 }
 
 .hero-actions {
   margin-top: 35px;
-
   display: flex;
+  gap: 12px;
   flex-wrap: wrap;
-
-  gap: 14px;
 }
 
 .hero-photo {
   position: relative;
-
-  min-height: 625px;
-
+  height: 620px;
   overflow: hidden;
-
-  border-radius:
-    48% 48% 32px 32px;
-
+  border-radius: 48% 48% 28px 28px;
   background: var(--pink);
-
   box-shadow: var(--shadow);
 }
 
 .hero-photo img {
   width: 100%;
   height: 100%;
-
-  position: absolute;
-  inset: 0;
-
   object-fit: cover;
-  object-position: center;
 }
-
 
 /* =========================================================
    02 — SOBRE MÍ
 ========================================================= */
 
 .about {
-  background: var(--cream-soft);
+  background: var(--cream-2);
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.75fr;
-
+  grid-template-columns: 1.12fr .78fr;
   gap: 90px;
-
   align-items: center;
+}
+
+.about-copy .eyebrow {
+  margin-bottom: 25px;
 }
 
 .about-title {
   max-width: 720px;
-
-  font-size: clamp(3rem, 5vw, 5.3rem);
+  font-size: clamp(3rem, 4.8vw, 5rem);
 }
 
-.about-title span {
-  display: inline;
-}
-
-.about-copy > p {
+.about-copy > p:not(.eyebrow) {
   max-width: 720px;
-
-  margin-top: 25px;
-
-  font-size: 0.98rem;
+  margin-top: 24px;
+  font-size: .96rem;
 }
 
 .about-copy strong {
-  color: var(--burgundy);
+  color: var(--wine);
 }
 
 .about-closing {
-  color: var(--burgundy);
-
-  font-size: 1.05rem !important;
+  color: var(--wine);
 }
 
 .results-cards {
   display: grid;
-
-  gap: 18px;
+  gap: 14px;
 }
 
 .result-card {
-  position: relative;
-
-  padding: 28px 30px 28px 38px;
-
-  overflow: hidden;
-
-  border-radius: 0 24px 24px 0;
-
+  padding: 27px 30px;
+  border-left: 4px solid var(--wine);
+  border-radius: 0 22px 22px 0;
   background: var(--pink);
-}
-
-.result-card::before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-
-  width: 4px;
-
-  background: var(--burgundy);
 }
 
 .result-card strong {
   display: block;
-
-  color: var(--burgundy);
-
-  font-size: clamp(2.3rem, 3.5vw, 3.8rem);
+  color: var(--wine);
+  font-size: clamp(2.3rem, 3.3vw, 3.6rem);
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -.05em;
 }
 
 .result-card p {
-  margin-top: 9px;
-
-  max-width: 300px;
-
-  font-size: 0.88rem;
+  margin-top: 8px;
+  font-size: .82rem;
 }
-
 
 /* =========================================================
    03 — MARCAS
@@ -428,110 +346,111 @@ h4 span {
 
 .brands-journey {
   padding: 80px 0;
-
   background: var(--cream);
+  text-align: center;
 }
 
 .brands-journey-title {
-  max-width: 700px;
-
-  font-size: clamp(2.6rem, 4.5vw, 4.8rem);
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: clamp(2.5rem, 4.2vw, 4.3rem);
 }
 
 .brand-pills-compact {
-  margin-top: 42px;
-
+  max-width: 1000px;
+  margin: 38px auto 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-
-  gap: 12px;
+  gap: 10px;
 }
 
 .brand-pill {
-  padding: 11px 20px;
-
+  padding: 9px 18px;
   border-radius: 999px;
-
   background: var(--pink);
-
-  color: var(--burgundy);
-
-  font-size: 0.82rem;
+  color: var(--wine);
+  font-size: .75rem;
   font-weight: 700;
 }
 
 .brand-pill:nth-child(even) {
-  background: var(--burgundy);
-  color: var(--white);
+  background: var(--wine);
+  color: white;
 }
 
-
 /* =========================================================
-   PROYECTOS — GENERAL
+   PROYECTOS
 ========================================================= */
 
 .project {
   overflow: hidden;
 }
 
+.project-aquamare {
+  background: var(--cream-2);
+}
+
+.project-sea-avenue {
+  background: var(--cream);
+}
+
+/* AQUAMARE + SEA AVENUE CENTRADOS */
+
 .project-header {
-  margin-bottom: 48px;
+  max-width: 900px;
+  margin: 0 auto 55px;
+  text-align: center;
 }
 
 .project-number {
-  margin-bottom: 14px;
-
-  color: var(--coral);
-
-  font-size: 0.78rem;
+  margin-bottom: 15px;
+  color: var(--pink-strong);
+  font-size: .72rem;
   font-weight: 800;
-  letter-spacing: 0.18em;
+  letter-spacing: .18em;
 }
 
 .project-header h2 {
-  font-size: clamp(3.7rem, 6vw, 6.5rem);
+  font-size: clamp(3.8rem, 6vw, 6.4rem);
 }
 
 .project-tags {
-  margin-top: 17px;
-
-  color: var(--burgundy);
-
-  font-size: 0.85rem;
+  margin-top: 18px;
+  color: var(--wine);
+  font-size: .78rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: .04em;
+}
+
+.project-subtitle {
+  max-width: 750px;
+  margin: 20px auto 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
 .project-hero-image {
-  position: relative;
-
   width: 100%;
-  min-height: 620px;
-
+  height: 620px;
   overflow: hidden;
-
-  border-radius: var(--radius-xl);
-
+  border-radius: 34px;
   background: var(--pink);
 }
 
 .project-hero-image img {
-  position: absolute;
-  inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
 
+/* RETO */
+
 .project-text-block {
-  margin-top: 85px;
-
+  margin-top: 90px;
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-
+  grid-template-columns: .7fr 1.3fr;
   gap: 70px;
+  align-items: start;
 }
 
 .project-text-block h3,
@@ -542,43 +461,35 @@ h4 span {
 .sea-evolution-closing h3,
 .bts-section h3,
 .production-plot-twist h3 {
-  font-size: clamp(2.7rem, 4.5vw, 4.8rem);
+  font-size: clamp(2.6rem, 4.2vw, 4.5rem);
 }
 
 .project-text-block p {
-  max-width: 630px;
-
-  font-size: 1.06rem;
+  max-width: 620px;
+  font-size: 1rem;
 }
+
+/* MI ROL */
 
 .project-role {
   margin-top: 75px;
 }
 
 .role-pills {
-  margin-top: 30px;
-
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
-
-  gap: 12px;
+  gap: 10px;
 }
 
 .role-pills span {
-  padding: 12px 20px;
-
-  border: 1px solid rgba(135, 5, 44, 0.18);
-
+  padding: 10px 17px;
   border-radius: 999px;
-
-  background: var(--pink-soft);
-
-  color: var(--burgundy);
-
-  font-size: 0.82rem;
+  background: var(--pink);
+  color: var(--wine);
+  font-size: .75rem;
   font-weight: 700;
 }
-
 
 /* =========================================================
    GALERÍAS
@@ -586,46 +497,32 @@ h4 span {
 
 .content-item {
   position: relative;
-
-  min-height: 360px;
-
+  min-height: 350px;
   overflow: hidden;
-
-  border-radius: var(--radius-lg);
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--pink-soft),
-      var(--pink)
-    );
-
+  border-radius: 24px;
+  background: var(--pink);
   box-shadow: var(--shadow);
 }
 
 .content-item img,
 .content-item video {
-  position: absolute;
-  inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
 
-.project-content-gallery {
-  margin-top: 70px;
+/* AQUAMARE 7 */
 
+.project-content-gallery {
+  margin-top: 65px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .project-content-gallery > :nth-child(1) {
   grid-column: span 5;
-  min-height: 570px;
+  min-height: 540px;
 }
 
 .project-content-gallery > :nth-child(2) {
@@ -649,86 +546,55 @@ h4 span {
   grid-column: span 7;
 }
 
+/* RESULTADOS */
 
-/* =========================================================
-   AQUAMARE — RESULTADO
-========================================================= */
-
-.project-aquamare {
-  background: var(--cream-soft);
-}
-
-.project-results {
-  margin-top: 100px;
-
+.project-results,
+.sea-result {
+  margin-top: 95px;
   display: grid;
-  grid-template-columns: 1fr 0.8fr;
-
-  gap: 80px;
-
+  grid-template-columns: 1fr .8fr;
+  gap: 70px;
   align-items: end;
 }
 
 .project-main-result {
-  padding: 45px;
-
-  border-radius: var(--radius-lg);
-
-  background: var(--burgundy);
-
-  color: var(--white);
+  padding: 42px;
+  border-radius: 28px;
+  background: var(--wine);
+  color: white;
 }
 
 .project-main-result strong {
   display: block;
-
-  color: var(--white);
-
-  font-size: clamp(3.5rem, 5vw, 5.7rem);
-  line-height: 1;
-  letter-spacing: -0.06em;
+  color: white;
+  font-size: clamp(3.3rem, 5vw, 5.5rem);
+  line-height: .95;
+  letter-spacing: -.06em;
 }
 
 .project-main-result p {
-  margin-top: 13px;
-
-  font-size: 0.95rem;
+  margin-top: 14px;
+  font-size: .88rem;
 }
-
 
 /* =========================================================
    SEA AVENUE
 ========================================================= */
 
-.project-sea-avenue {
-  background: var(--cream);
-}
-
-.sea-header {
-  max-width: 900px;
-}
-
-.project-subtitle {
-  margin-top: 28px;
-
-  font-size: clamp(2.3rem, 4vw, 4.2rem);
-}
-
 .evolution-grid {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .evolution-item {
-  min-height: 270px;
-
+  min-height: 285px;
   padding: 30px;
-
-  border-radius: var(--radius-lg);
-
-  background: var(--pink-soft);
+  display: flex;
+  flex-direction: column;
+  border-radius: 26px;
+  background: var(--cream-2);
 }
 
 .evolution-item:nth-child(2) {
@@ -736,36 +602,30 @@ h4 span {
 }
 
 .evolution-item:nth-child(3) {
-  background: var(--burgundy);
+  background: var(--wine);
+  color: white;
+}
 
-  color: var(--white);
+.evolution-number {
+  color: var(--pink-strong);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.evolution-item h4 {
+  margin-top: auto;
+  font-size: 1.3rem;
+}
+
+.evolution-item p {
+  margin-top: 13px;
+  font-size: .8rem;
 }
 
 .evolution-item:nth-child(3) h4,
 .evolution-item:nth-child(3) .evolution-number {
-  color: var(--white);
-}
-
-.evolution-number {
-  color: var(--coral);
-
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
-.evolution-item h4 {
-  margin-top: 50px;
-
-  color: var(--burgundy);
-
-  font-size: 1.35rem;
-}
-
-.evolution-item p {
-  margin-top: 15px;
-
-  font-size: 0.86rem;
+  color: white;
 }
 
 .sea-content {
@@ -773,12 +633,10 @@ h4 span {
 }
 
 .sea-gallery {
-  margin-top: 45px;
-
+  margin-top: 42px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .sea-gallery > :nth-child(1) {
@@ -787,8 +645,7 @@ h4 span {
 
 .sea-gallery > :nth-child(2) {
   grid-column: span 5;
-
-  min-height: 560px;
+  min-height: 540px;
 }
 
 .sea-gallery > :nth-child(3) {
@@ -800,44 +657,28 @@ h4 span {
   grid-column: span 6;
 }
 
-.sea-result {
-  margin-top: 100px;
-
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-
-  gap: 80px;
-
-  align-items: end;
-}
-
 .sea-evolution-closing {
-  margin-top: 120px;
-
-  max-width: 920px;
+  max-width: 900px;
+  margin-top: 110px;
 }
 
 .sea-evolution-closing p {
   max-width: 680px;
-
-  margin-top: 28px;
-
-  font-size: 1.06rem;
+  margin-top: 25px;
+  font-size: 1rem;
 }
 
 .sea-evolution-closing strong {
-  color: var(--burgundy);
+  color: var(--wine);
 }
-
 
 /* =========================================================
    06 — PRODUCCIÓN AUDIOVISUAL
 ========================================================= */
 
 .production {
-  background: var(--burgundy);
-
-  color: var(--white);
+  background: var(--wine);
+  color: white;
 }
 
 .production .eyebrow {
@@ -849,33 +690,40 @@ h4 span {
 }
 
 .production-intro h2 {
-  color: var(--white);
-
-  font-size: clamp(3.5rem, 6vw, 6.4rem);
+  color: white;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(3.5rem, 5.8vw, 6.2rem);
+  font-weight: 800;
+  letter-spacing: -.055em;
 }
 
+/* FRASE COMPLETA "TERMINAN EN UN SET." */
 .production-intro h2 span {
+  display: block;
+  margin-top: 5px;
+  font-family: "Instrument Serif", serif;
+  font-size: 1.08em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: .95;
+  letter-spacing: -.02em;
   color: var(--pink);
 }
 
 .production-process {
-  margin-top: 75px;
-
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .process-card {
-  min-height: 350px;
-
+  min-height: 380px;
   padding: 32px;
-
-  border-radius: var(--radius-lg);
-
+  display: flex;
+  flex-direction: column;
+  border-radius: 27px;
   background: var(--cream);
-
   color: var(--text);
 }
 
@@ -884,81 +732,69 @@ h4 span {
 }
 
 .process-number {
-  color: var(--coral);
-
-  font-size: 0.76rem;
+  color: var(--pink-strong);
+  font-size: .72rem;
   font-weight: 800;
-  letter-spacing: 0.16em;
+  letter-spacing: .16em;
 }
 
 .process-card h3 {
   margin-top: 45px;
-
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  color: var(--wine);
 }
 
 .process-card > p {
   margin-top: 20px;
-
-  font-size: 0.88rem;
+  font-size: .84rem;
 }
 
 .process-note {
-  padding-top: 18px;
-
-  border-top: 1px solid rgba(135, 5, 44, 0.15);
-
-  color: var(--burgundy);
-
+  margin-top: auto !important;
+  padding-top: 20px;
+  border-top: 1px solid rgba(133, 5, 45, .15);
+  color: var(--wine);
   font-weight: 700;
 }
 
 .production-numbers {
-  margin-top: 75px;
-
+  margin-top: 65px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 .production-stat {
-  padding: 40px;
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
-
-  border-radius: var(--radius-lg);
+  padding: 38px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 27px;
 }
 
 .production-stat > strong {
   display: block;
-
   color: var(--pink);
-
-  font-size: clamp(5rem, 9vw, 9rem);
-  line-height: 0.9;
-  letter-spacing: -0.07em;
+  font-size: clamp(5rem, 8vw, 8rem);
+  line-height: .85;
+  letter-spacing: -.07em;
 }
 
 .production-stat p {
-  margin-top: 20px;
-
-  max-width: 300px;
-
-  font-size: 0.95rem;
+  max-width: 320px;
+  margin-top: 22px;
+  font-size: .88rem;
 }
 
 .production-stat p strong {
-  color: var(--white);
+  color: white;
 }
 
 .bts-section {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 .bts-section h3,
 .production-plot-twist h3 {
-  color: var(--white);
+  color: white;
 }
 
 .bts-section h3 span,
@@ -967,17 +803,15 @@ h4 span {
 }
 
 .bts-gallery {
-  margin-top: 45px;
-
+  margin-top: 42px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .bts-gallery > :nth-child(1) {
   grid-column: span 5;
-  min-height: 560px;
+  min-height: 540px;
 }
 
 .bts-gallery > :nth-child(2) {
@@ -1002,98 +836,80 @@ h4 span {
 }
 
 .production-plot-twist {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 .production-plot-twist > p {
-  max-width: 670px;
-
-  margin-top: 25px;
-
-  color: rgba(255, 255, 255, 0.78);
-
-  font-size: 1.02rem;
+  max-width: 650px;
+  margin-top: 22px;
+  color: rgba(255,255,255,.78);
 }
 
 .model-gallery {
-  margin-top: 45px;
-
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .model-gallery .content-item {
-  min-height: 470px;
+  min-height: 450px;
 }
 
-
 /* =========================================================
-   07 — ESTRATEGIA DIGITAL EN ACCIÓN
+   07 — ESTRATEGIA DIGITAL
 ========================================================= */
 
 .digital-strategy {
-  background: var(--cream-soft);
+  background: var(--cream-2);
 }
 
 .strategy-heading {
-  max-width: 950px;
+  max-width: 920px;
 }
 
 .strategy-heading h2 {
-  font-size: clamp(3.3rem, 5.8vw, 6rem);
+  font-size: clamp(3.3rem, 5.5vw, 5.8rem);
 }
 
 .strategy-grid {
-  margin-top: 70px;
-
+  margin-top: 65px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  gap: 18px;
+  gap: 16px;
 }
 
 .strategy-card {
-  min-height: 390px;
-
-  padding: 38px;
-
+  min-height: 400px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
-
-  border-radius: var(--radius-lg);
-
+  border-radius: 28px;
   background: var(--pink);
 }
 
 .strategy-card:nth-child(2),
 .strategy-card:nth-child(3) {
-  background: var(--burgundy);
+  background: var(--wine);
+  color: white;
+}
 
-  color: var(--white);
+.strategy-card h3 {
+  font-size: .75rem;
+  letter-spacing: .15em;
 }
 
 .strategy-card:nth-child(2) h3,
 .strategy-card:nth-child(3) h3,
-.strategy-card:nth-child(3) h4,
-.strategy-card:nth-child(2) .strategy-metric strong {
-  color: var(--white);
-}
-
-.strategy-card h3 {
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
+.strategy-card:nth-child(3) h4 {
+  color: white;
 }
 
 .strategy-metrics {
   margin-top: auto;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  gap: 25px;
+  gap: 22px;
 }
 
 .strategy-metric {
@@ -1102,43 +918,39 @@ h4 span {
 
 .strategy-metric strong {
   display: block;
+  color: var(--wine);
+  font-size: clamp(2.7rem, 4vw, 4.5rem);
+  line-height: .95;
+  letter-spacing: -.055em;
+}
 
-  color: var(--burgundy);
-
-  font-size: clamp(2.7rem, 4vw, 4.8rem);
-  line-height: 1;
-  letter-spacing: -0.055em;
+.strategy-card:nth-child(2) .strategy-metric strong {
+  color: white;
 }
 
 .strategy-metric p {
-  margin-top: 12px;
-
   max-width: 250px;
-
-  font-size: 0.88rem;
+  margin-top: 11px;
+  font-size: .82rem;
 }
 
 .strategy-description {
   max-width: 430px;
-
   margin-top: auto;
-
-  font-size: 0.92rem;
+  font-size: .86rem;
 }
 
 .strategy-card h4 {
   margin-top: auto;
-
-  font-size: clamp(2.2rem, 3.5vw, 3.7rem);
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
 }
-
 
 /* =========================================================
    08 — SERVICIOS
 ========================================================= */
 
 .services {
-  background: var(--pink-soft);
+  background: var(--pink);
 }
 
 .services-heading {
@@ -1146,354 +958,255 @@ h4 span {
 }
 
 .services-heading h2 {
-  font-size: clamp(3.4rem, 5.8vw, 6rem);
+  font-size: clamp(3.4rem, 5.5vw, 5.8rem);
 }
 
+/*
+  IMPORTANTE:
+  3 TARJETAS VERTICALES EN DESKTOP
+*/
+
 .services-grid {
-  margin-top: 65px;
-
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-
   align-items: stretch;
 }
 
 .service-card {
-  min-height: 590px;
-
-  padding: 34px;
-
+  width: 100%;
+  min-width: 0;
+  min-height: 650px;
+  padding: 34px 30px;
   display: flex;
   flex-direction: column;
-
-  border-radius: var(--radius-lg);
-
+  border-radius: 30px;
   background: var(--cream);
-
   box-shadow: var(--shadow);
 }
 
 .service-card-featured {
-  background: var(--burgundy);
-
-  color: var(--white);
+  background: var(--wine);
+  color: white;
 }
 
 .service-number {
-  color: var(--coral);
-
-  font-size: 0.75rem;
+  color: var(--pink-strong);
+  font-size: .72rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
 }
 
 .service-card h3 {
-  margin-top: 45px;
-
-  font-size: 1.5rem;
+  margin-top: 42px;
+  font-size: clamp(1.3rem, 1.8vw, 1.65rem);
+  line-height: 1.15;
 }
 
 .service-card-featured h3,
 .service-card-featured .service-number {
-  color: var(--white);
+  color: white;
 }
 
 .service-description {
-  margin-top: 24px;
-
-  font-size: 0.87rem;
+  margin-top: 23px;
+  font-size: .83rem;
+  line-height: 1.65;
 }
 
 .service-list {
   margin-top: auto;
   padding-top: 35px;
-
-  list-style: none;
 }
 
 .service-list li {
   position: relative;
-
-  padding: 9px 0 9px 22px;
-
-  border-bottom: 1px solid rgba(135, 5, 44, 0.08);
-
-  font-size: 0.82rem;
+  padding: 10px 0 10px 21px;
+  border-bottom: 1px solid rgba(133, 5, 45, .09);
+  font-size: .77rem;
 }
 
 .service-list li::before {
   content: "✦";
-
   position: absolute;
   left: 0;
-
-  color: var(--coral);
+  color: var(--pink-strong);
 }
 
 .service-card-featured .service-list li {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255,255,255,.13);
 }
 
-
-/* =========================================================
-   MI ECOSISTEMA DE TRABAJO
-========================================================= */
+/* ECOSISTEMA */
 
 .work-ecosystem {
-  margin-top: 28px;
-
-  padding: 30px 34px;
-
+  margin-top: 22px;
+  padding: 27px 30px;
   display: grid;
-  grid-template-columns: 190px 1fr;
-
-  gap: 30px;
-
+  grid-template-columns: 185px 1fr;
+  gap: 28px;
   align-items: center;
-
-  border-radius: var(--radius-lg);
-
+  border-radius: 25px;
   background: var(--cream);
-
   box-shadow: var(--shadow);
 }
 
 .work-ecosystem-title {
-  color: var(--burgundy);
-
-  font-size: 0.78rem;
+  color: var(--wine);
+  font-size: .72rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
+  letter-spacing: .14em;
 }
 
 .tool-pills {
   display: flex;
   flex-wrap: wrap;
-
-  gap: 9px;
+  gap: 8px;
 }
 
 .tool-pill {
-  padding: 8px 14px;
-
-  border: 1px solid rgba(135, 5, 44, 0.15);
-
+  padding: 7px 13px;
+  border: 1px solid rgba(133, 5, 45, .15);
   border-radius: 999px;
-
-  background: var(--cream-soft);
-
-  color: var(--burgundy);
-
-  font-size: 0.73rem;
+  background: var(--cream-2);
+  color: var(--wine);
+  font-size: .68rem;
   font-weight: 700;
 }
 
 .tool-pill-dark {
-  border-color: var(--burgundy);
-
-  background: var(--burgundy);
-
-  color: var(--white);
+  background: var(--wine);
+  border-color: var(--wine);
+  color: white;
 }
-
 
 /* =========================================================
    09 — CONTACTO
 ========================================================= */
 
 .contact {
-  min-height: 92vh;
-
+  min-height: 95vh;
   display: flex;
   align-items: center;
-
-  overflow: hidden;
-
   background: var(--cream);
 }
 
-.contact::after {
-  content: "";
-
-  position: absolute;
-  left: -8%;
-  right: -8%;
-  bottom: -220px;
-
-  height: 330px;
-
-  border-radius: 50% 50% 0 0;
-
-  background: var(--pink);
-
-  opacity: 0.6;
-
-  z-index: 0;
-}
-
 .contact-inner {
-  position: relative;
-
-  z-index: 1;
+  width: min(1050px, calc(100% - 48px));
 }
+
+/* RECUADRO PRINCIPAL */
 
 .contact-heading {
-  max-width: 900px;
+  max-width: 100%;
+  padding: 65px 65px 55px;
+  border-radius: 36px 36px 0 0;
+  background: var(--pink);
+}
+
+.contact-heading .eyebrow {
+  margin-bottom: 22px;
 }
 
 .contact-heading h2 {
-  font-size: clamp(4rem, 7vw, 7.4rem);
+  max-width: 900px;
+  font-size: clamp(4rem, 6.8vw, 7rem);
 }
 
 .contact-copy {
-  margin-top: 38px;
-
-  max-width: 600px;
+  max-width: 100%;
+  padding: 0 65px 35px;
+  background: var(--pink);
 }
 
 .contact-copy p {
-  font-size: 1.06rem;
+  max-width: 600px;
+  font-size: 1rem;
 }
 
+/* CTA COMO CONTENEDOR PROTAGONISTA */
+
 .contact-cta {
-  margin-top: 45px;
+  background: var(--pink);
+  padding: 0 65px 65px;
+  border-radius: 0 0 36px 36px;
 }
 
 .contact-whatsapp {
-  min-height: 70px;
-
+  width: 100%;
+  min-height: 88px;
   padding: 0 34px;
-
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-
-  border-radius: 999px;
-
-  background: var(--burgundy);
-
-  color: var(--white);
-
-  font-size: 0.95rem;
+  justify-content: space-between;
+  border-radius: 22px;
+  background: var(--wine);
+  color: white;
+  font-size: 1rem;
   font-weight: 800;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: .25s ease;
 }
 
 .contact-whatsapp:hover {
-  transform: translateY(-4px);
-
-  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+  background: var(--wine-dark);
 }
 
 .contact-signature {
-  margin-top: 120px;
-
-  padding-top: 25px;
-
-  border-top: 1px solid rgba(135, 5, 44, 0.13);
+  margin-top: 55px;
+  text-align: center;
 }
 
 .contact-signature p {
-  color: var(--burgundy);
-
+  color: var(--wine);
   font-family: "Instrument Serif", serif;
   font-size: 1.25rem;
   font-style: italic;
 }
 
-
-/* =========================================================
-   MOVIMIENTO SUAVE
-========================================================= */
-
-@media (prefers-reduced-motion: no-preference) {
-
-  .hero-copy,
-  .hero-photo {
-    animation: appear 0.8s ease both;
-  }
-
-  .hero-photo {
-    animation-delay: 0.12s;
-  }
-
-  @keyframes appear {
-
-    from {
-      opacity: 0;
-      transform: translateY(18px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-  }
-
-}
-
-
 /* =========================================================
    TABLET
 ========================================================= */
 
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
 
   .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
-
-    gap: 55px;
-  }
-
-  .hero {
-    min-height: auto;
   }
 
   .hero-photo {
-    min-height: 620px;
-  }
-
-  .about-grid {
-    align-items: start;
+    height: 600px;
   }
 
   .results-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .project-text-block,
   .project-results,
   .sea-result {
     grid-template-columns: 1fr;
-
-    gap: 40px;
   }
 
   .evolution-grid,
-  .production-process,
-  .services-grid {
+  .production-process {
     grid-template-columns: 1fr;
   }
 
-  .evolution-item,
-  .process-card,
-  .service-card {
-    min-height: auto;
-  }
-
-  .service-list {
-    margin-top: 35px;
-  }
-
   .model-gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*
+    NO CAMBIAMOS SERVICIOS A 1 COLUMNA AQUÍ.
+    En tablet todavía conserva las tres tarjetas
+    mientras haya espacio suficiente.
+  */
+
+  .service-card {
+    padding: 28px 24px;
   }
 
   .work-ecosystem {
@@ -1502,7 +1215,6 @@ h4 span {
 
 }
 
-
 /* =========================================================
    MÓVIL
 ========================================================= */
@@ -1510,19 +1222,14 @@ h4 span {
 @media (max-width: 760px) {
 
   .container {
-    width: min(100% - 32px, 1180px);
+    width: calc(100% - 30px);
   }
 
   .section {
-    padding: 82px 0;
+    padding: 80px 0;
   }
 
-
-  /* MENÚ */
-
-  .nav {
-    min-height: 70px;
-  }
+  /* NAV */
 
   .menu-toggle {
     display: block;
@@ -1530,23 +1237,16 @@ h4 span {
 
   .nav-links {
     position: absolute;
-
     top: 70px;
-    left: 16px;
-    right: 16px;
-
+    left: 15px;
+    right: 15px;
+    padding: 12px;
     display: none;
     flex-direction: column;
     align-items: stretch;
-
     gap: 0;
-
-    padding: 12px;
-
-    border-radius: 20px;
-
     background: var(--cream);
-
+    border-radius: 20px;
     box-shadow: var(--shadow);
   }
 
@@ -1555,22 +1255,21 @@ h4 span {
   }
 
   .nav-links a {
-    padding: 13px;
+    padding: 12px;
   }
 
-
   /* HOME */
+
+  .hero {
+    min-height: auto;
+  }
 
   .hero-grid {
     gap: 45px;
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 14vw, 4.8rem);
-  }
-
-  .hero-role {
-    line-height: 1.8;
+    font-size: clamp(3rem, 14vw, 4.7rem);
   }
 
   .hero-actions {
@@ -1582,52 +1281,33 @@ h4 span {
   }
 
   .hero-photo {
-    min-height: 480px;
+    height: 480px;
   }
-
 
   /* SOBRE MÍ */
 
   .about-title {
-    font-size: clamp(2.8rem, 12vw, 4.4rem);
+    font-size: clamp(2.8rem, 12vw, 4.2rem);
   }
 
   .results-cards {
     grid-template-columns: 1fr;
   }
 
-
   /* MARCAS */
 
-  .brands-journey {
-    padding: 65px 0;
+  .brands-journey-title {
+    font-size: clamp(2.4rem, 11vw, 3.8rem);
   }
-
-  .brand-pills-compact {
-    gap: 8px;
-  }
-
-  .brand-pill {
-    padding: 9px 15px;
-
-    font-size: 0.74rem;
-  }
-
 
   /* PROYECTOS */
 
   .project-header h2 {
-    font-size: clamp(3.2rem, 15vw, 5rem);
+    font-size: clamp(3.2rem, 15vw, 4.8rem);
   }
 
   .project-hero-image {
-    min-height: 430px;
-
-    border-radius: 28px;
-  }
-
-  .project-text-block {
-    margin-top: 60px;
+    height: 430px;
   }
 
   .project-content-gallery,
@@ -1640,57 +1320,23 @@ h4 span {
   .sea-gallery > *,
   .bts-gallery > * {
     grid-column: auto !important;
-
-    min-height: 420px !important;
+    min-height: 410px !important;
   }
-
-  .project-results,
-  .sea-result {
-    margin-top: 75px;
-  }
-
-  .project-main-result {
-    padding: 30px;
-  }
-
-
-  /* SEA AVENUE */
-
-  .sea-content,
-  .sea-evolution-closing {
-    margin-top: 80px;
-  }
-
-  .evolution-item {
-    padding: 28px;
-  }
-
 
   /* PRODUCCIÓN */
 
+  .production-process,
   .production-numbers {
     grid-template-columns: 1fr;
   }
 
-  .production-stat {
-    padding: 32px;
-  }
-
-  .bts-section,
-  .production-plot-twist {
-    margin-top: 90px;
-  }
-
   .model-gallery {
-    grid-template-columns: 1fr 1fr;
-
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .model-gallery .content-item {
-    min-height: 320px;
+    min-height: 310px;
   }
-
 
   /* ESTRATEGIA */
 
@@ -1698,83 +1344,65 @@ h4 span {
     grid-template-columns: 1fr;
   }
 
-  .strategy-card {
-    min-height: 360px;
-
-    padding: 30px;
-  }
-
   .strategy-metrics {
     grid-template-columns: 1fr;
-
-    margin-top: 60px;
+    gap: 35px;
   }
-
 
   /* SERVICIOS */
 
   .services-grid {
-    margin-top: 50px;
+    grid-template-columns: 1fr;
   }
 
   .service-card {
-    padding: 30px;
-  }
-
-  .work-ecosystem {
-    padding: 25px;
-  }
-
-
-  /* CONTACTO */
-
-  .contact {
     min-height: auto;
   }
 
+  .service-list {
+    margin-top: 35px;
+  }
+
+  /* CONTACTO */
+
+  .contact-inner {
+    width: calc(100% - 30px);
+  }
+
+  .contact-heading {
+    padding: 42px 28px 35px;
+  }
+
   .contact-heading h2 {
-    font-size: clamp(3.5rem, 16vw, 5.4rem);
+    font-size: clamp(3.3rem, 15vw, 5rem);
+  }
+
+  .contact-copy {
+    padding: 0 28px 30px;
+  }
+
+  .contact-cta {
+    padding: 0 28px 42px;
   }
 
   .contact-whatsapp {
-    width: 100%;
-  }
-
-  .contact-signature {
-    margin-top: 90px;
+    min-height: 74px;
   }
 
 }
 
-
 /* =========================================================
-   MÓVILES MUY PEQUEÑOS
+   MÓVIL PEQUEÑO
 ========================================================= */
 
-@media (max-width: 420px) {
-
-  .container {
-    width: calc(100% - 24px);
-  }
-
-  .hero-photo {
-    min-height: 420px;
-  }
-
-  .result-card {
-    padding: 25px 25px 25px 30px;
-  }
+@media (max-width: 430px) {
 
   .model-gallery {
     grid-template-columns: 1fr;
   }
 
   .model-gallery .content-item {
-    min-height: 430px;
-  }
-
-  .strategy-card {
-    min-height: 330px;
+    min-height: 420px;
   }
 
 }
