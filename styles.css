@@ -1649,26 +1649,29 @@ strong {
 
   /* HOME */
 
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 65px;
-    padding-bottom: 55px;
-  }
+ /* HOME */
 
-  .hero-title {
-    max-width: 760px;
-  }
+.hero {
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 28px;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
 
-  .hero-visual {
-    min-height: 430px;
-  }
+.hero-title {
+  max-width: 760px;
+  font-size: clamp(3.6rem, 7vw, 5.5rem);
+}
 
-  .hero-photo-placeholder {
-    right: 50%;
-    transform: translateX(50%);
-    width: min(390px, 75%);
-  }
+.hero-visual {
+  min-height: 430px;
+}
 
+.hero-photo-placeholder {
+  right: 0;
+  transform: none;
+  width: 78%;
+}
 
   /* SOBRE MI */
 
@@ -2808,26 +2811,4 @@ strong {
       rgba(246, 234, 240, 0.96) 0%,
       rgba(192, 139, 160, 0.10) 100%
     );
-}
-
-/* =========================================================
-   29. HERO — MANTENER FOTO A LA DERECHA
-========================================================= */
-
-@media (min-width: 769px) {
-  .hero {
-    grid-template-columns: minmax(0, 1.15fr) minmax(330px, 0.85fr) !important;
-    align-items: center;
-    gap: 38px;
-  }
-
-  .hero-visual {
-    min-height: 530px;
-  }
-
-  .hero-photo-placeholder {
-    right: 3%;
-    transform: none;
-    width: 74%;
-  }
 }
