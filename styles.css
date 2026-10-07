@@ -3140,3 +3140,20 @@ strong {
   object-fit: cover;
   object-position: center;
 }
+
+/* FOTO HOME — MÁS ANCHA */
+
+.hero-photo-group {
+  width: 86%;
+}
+
+.hero-profile-image {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+@media (max-width: 650px) {
+  .hero-photo-group {
+    width: 82%;
+  }
+}
