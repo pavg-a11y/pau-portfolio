@@ -2815,15 +2815,15 @@ strong {
 ========================================================= */
 
 .hero-identity {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .hero-name {
-  margin: 0 0 5px;
+  margin: 0 0 2px;
   font-family: "Manrope", sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--clay);
 }
@@ -2831,7 +2831,8 @@ strong {
 .hero-profession {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: 1.08rem;
+  font-size: 0.92rem;
   font-style: italic;
+  line-height: 1.1;
   color: var(--text-soft);
 }
