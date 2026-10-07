@@ -3157,3 +3157,15 @@ strong {
     width: 82%;
   }
 }
+
+/* FOTO HOME — MÁS ALTURA */
+
+.hero-photo-group {
+  height: 98%;
+}
+
+@media (max-width: 650px) {
+  .hero-photo-group {
+    height: 470px;
+  }
+}
