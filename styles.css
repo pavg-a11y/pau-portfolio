@@ -2536,3 +2536,239 @@ strong {
   }
 
 }
+
+/* =========================================================
+   25. AJUSTES FINALES II
+========================================================= */
+
+
+/* =========================================================
+   SOBRE MÍ
+   Tarjetas alineadas únicamente con el bloque de texto
+   y más compactas.
+========================================================= */
+
+@media (min-width: 1101px) {
+
+  .about-stats {
+    align-self: auto;
+
+    /* Arranca aproximadamente donde comienza
+       "Soy comunicadora social..." */
+    margin-top: 235px;
+
+    grid-template-rows: repeat(3, 122px);
+    gap: 14px;
+  }
+
+  .stat-card {
+    min-height: 122px;
+    height: 122px;
+
+    padding: 20px 27px;
+  }
+
+  .stat-card strong {
+    font-size: clamp(2rem, 2.7vw, 2.9rem);
+  }
+
+  .stat-card p {
+    font-size: 0.76rem;
+  }
+
+}
+
+
+/* =========================================================
+   ESTRATEGIA
+   Conservamos el rosa que te gustó, pero agregamos
+   un degradado MUY sutil.
+========================================================= */
+
+.strategy-card,
+.strategy-card:nth-child(2),
+.strategy-card:nth-child(3),
+.strategy-card:nth-child(4) {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(231, 198, 209, 0.98) 0%,
+      rgba(231, 198, 209, 0.88) 55%,
+      rgba(192, 139, 160, 0.30) 100%
+    );
+
+  border-color: rgba(140, 63, 91, 0.10);
+}
+
+
+/* =========================================================
+   DEL MÉTODO A LA ACCIÓN
+   Ahora sí funciona como título secundario.
+========================================================= */
+
+.case-study > .eyebrow {
+  margin: 0 auto 34px;
+
+  text-align: center;
+
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+
+  letter-spacing: 0.08em;
+
+  color: var(--clay);
+}
+
+
+/* =========================================================
+   SAN ANDRÉS + BOGOTÁ
+   Títulos secundarios con más presencia.
+========================================================= */
+
+.production-location,
+.bogota-production > .production-location {
+  margin-bottom: 40px;
+
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.15;
+
+  letter-spacing: 0.08em;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  color: var(--clay);
+}
+
+
+/* =========================================================
+   CREAR TAMBIÉN ES
+   ESTAR AHÍ
+========================================================= */
+
+.bogota-story h3 em {
+  display: block;
+}
+
+.bogota-title-second {
+  display: block;
+
+  margin-top: 2px;
+}
+
+
+/* =========================================================
+   CONTACTO
+   Quitamos las rayitas inferiores de EMAIL y LINKEDIN.
+========================================================= */
+
+.contact-link {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   DIFERENCIAS SUTILES ENTRE SECCIONES
+========================================================= */
+
+
+/* SOBRE MÍ */
+
+.about {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(231, 198, 209, 0.18) 0%,
+      rgba(246, 234, 240, 0.72) 100%
+    );
+}
+
+
+/* MARCAS QUE HAN SIDO PARTE DEL CAMINO */
+
+.brands-block {
+  position: relative;
+
+  margin-top: 90px;
+  padding: 58px 42px;
+
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(231, 198, 209, 0.28),
+      rgba(192, 139, 160, 0.10)
+    );
+}
+
+
+/* NO TODAS LAS MARCAS NECESITAN LA MISMA ESTRATEGIA */
+
+.strategy-layout {
+  padding: 58px 52px;
+
+  border-radius: var(--radius-lg);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(231, 198, 209, 0.16),
+      rgba(246, 234, 240, 0.58)
+    );
+}
+
+
+/* PROYECTOS QUE HAGO REALIDAD */
+
+.experience {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(231, 198, 209, 0.16) 0%,
+      rgba(246, 234, 240, 0.72) 100%
+    );
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .about-stats {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .strategy-layout {
+    padding: 45px 38px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .brands-block {
+    padding: 42px 20px;
+  }
+
+  .strategy-layout {
+    padding: 38px 22px;
+  }
+
+  .production-location,
+  .bogota-production > .production-location {
+    font-size: 1.08rem;
+  }
+
+  .case-study > .eyebrow {
+    font-size: 1.25rem;
+  }
+
+}
