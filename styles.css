@@ -2814,15 +2814,37 @@ strong {
 }
 
 /* =========================================================
-   IDENTIDAD — HOME
+   FOTO + IDENTIDAD — HOME
 ========================================================= */
 
-.hero-identity {
+.hero-photo-group {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   right: 0;
-  bottom: -55px;
+  bottom: 0;
+
   width: 78%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-photo-group .hero-photo-placeholder {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  transform: none;
+
+  width: 100%;
+  height: calc(100% - 58px);
+  flex-shrink: 0;
+}
+
+.hero-identity {
+  width: 100%;
+  margin-top: 12px;
   text-align: center;
 }
 
