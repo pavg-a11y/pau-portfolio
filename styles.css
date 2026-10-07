@@ -3169,3 +3169,17 @@ strong {
     height: 470px;
   }
 }
+
+/* FOTO HOME — ANCHO ANTERIOR + ALTURA ACTUAL */
+
+.hero-photo-group {
+  width: 86%;
+  height: 98%;
+}
+
+@media (max-width: 650px) {
+  .hero-photo-group {
+    width: 82%;
+    height: 470px;
+  }
+}
