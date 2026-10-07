@@ -3236,3 +3236,14 @@ strong {
   object-position: center bottom;
   margin: 0 auto;
 }
+
+/* HOME — ALINEAR HOMBRO CON EL ARCO */
+
+.hero-profile-image {
+  width: 94%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  margin: 0 auto;
+  transform: translateX(3%);
+}
