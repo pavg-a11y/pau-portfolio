@@ -2809,32 +2809,3 @@ strong {
       rgba(192, 139, 160, 0.10) 100%
     );
 }
-
-/* =========================================================
-   28. IDENTIDAD — DEBAJO DE FOTO
-========================================================= */
-
-.hero-identity {
-  position: relative;
-  z-index: 3;
-  margin-top: 18px;
-  text-align: center;
-}
-
-.hero-name {
-  margin: 0 0 4px;
-  font-family: "Manrope", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--clay);
-}
-
-.hero-profession {
-  margin: 0;
-  font-family: "Instrument Serif", serif;
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--text-soft);
-}
