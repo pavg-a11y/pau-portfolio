@@ -2811,19 +2811,22 @@ strong {
 }
 
 /* =========================================================
-   28. IDENTIDAD — HOME
+   28. IDENTIDAD — DEBAJO DE FOTO
 ========================================================= */
 
 .hero-identity {
-  margin-bottom: 12px;
+  position: relative;
+  z-index: 3;
+  margin-top: 18px;
+  text-align: center;
 }
 
 .hero-name {
-  margin: 0 0 2px;
+  margin: 0 0 4px;
   font-family: "Manrope", sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--clay);
 }
@@ -2831,8 +2834,7 @@ strong {
 .hero-profession {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-style: italic;
-  line-height: 1.1;
   color: var(--text-soft);
 }
