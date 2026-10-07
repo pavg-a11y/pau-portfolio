@@ -3126,3 +3126,17 @@ strong {
   }
 
 }
+
+/* FOTO PRINCIPAL — HOME */
+
+.hero-photo-group .hero-photo-placeholder {
+  overflow: hidden;
+}
+
+.hero-profile-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
