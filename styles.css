@@ -1397,10 +1397,6 @@ strong {
   color: var(--rust);
 }
 
-.ecosystem-line span::first-letter {
-  color: var(--terracotta);
-}
-
 
 /* =========================================================
    16. CONTACTO
@@ -1541,21 +1537,18 @@ strong {
 
 
 /* =========================================================
-   18. ANIMACIONES
+   18. VISIBILIDAD
+   Por ahora TODO queda visible.
+   Cuando pongamos el JS activamos las animaciones.
 ========================================================= */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(22px);
+  opacity: 1;
+  transform: translateY(0);
 
   transition:
     opacity 0.7s ease,
     transform 0.7s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 
@@ -1982,11 +1975,6 @@ strong {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-  }
-
-  .reveal {
-    opacity: 1;
-    transform: none;
   }
 
 }
