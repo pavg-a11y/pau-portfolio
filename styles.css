@@ -10,21 +10,21 @@
 ========================================================= */
 
 :root {
-  --petal: #fcf8f5;
-  --cream: #fff8f3;
-  --blush: #e7c7c1;
-  --rose: #cfa899;
-  --terracotta: #a75a4a;
-  --clay: #8b372d;
-  --rust: #5d241d;
-  --onyx: #330601;
+  --petal: #f6eaf0;
+  --cream: #f6eaf0;
+  --blush: #e7c6d1;
+  --rose: #c08ba0;
+  --terracotta: #8c3f5b;
+  --clay: #5a2136;
+  --rust: #5a2136;
+  --onyx: #5a2136;
 
-  --text: #330601;
-  --text-soft: #6f514b;
+  --text: #5a2136;
+  --text-soft: #8c6573;
   --white: #ffffff;
 
-  --border: rgba(139, 55, 45, 0.22);
-  --border-strong: rgba(139, 55, 45, 0.42);
+  --border: rgba(140, 63, 91, 0.20);
+  --border-strong: rgba(140, 63, 91, 0.40);
 
   --radius-lg: 34px;
   --radius-md: 24px;
@@ -33,10 +33,10 @@
   --max-width: 1240px;
 
   --shadow-soft:
-    0 18px 50px rgba(51, 6, 1, 0.07);
+    0 18px 50px rgba(90, 33, 54, 0.07);
 
   --shadow-card:
-    0 12px 35px rgba(51, 6, 1, 0.06);
+    0 12px 35px rgba(90, 33, 54, 0.06);
 }
 
 
