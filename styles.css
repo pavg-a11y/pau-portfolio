@@ -2812,3 +2812,29 @@ strong {
       rgba(192, 139, 160, 0.10) 100%
     );
 }
+
+/* =========================================================
+   IDENTIDAD — HOME
+========================================================= */
+
+.hero-identity {
+  margin-bottom: 24px;
+}
+
+.hero-name {
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  color: var(--clay);
+}
+
+.hero-profession {
+  margin-top: 5px;
+  font-family: "Instrument Serif", serif;
+  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--terracotta);
+}
