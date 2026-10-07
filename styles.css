@@ -2844,14 +2844,11 @@ strong {
 .hero-identity {
   position: absolute;
   top: calc(100% + 14px);
-  left: 50%;
-  transform: translateX(-58%);
+  left: 0;
 
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
 }
-
 .hero-name {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
