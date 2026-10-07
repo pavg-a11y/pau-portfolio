@@ -1,17 +1,116 @@
-const menuButton = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+document.addEventListener("DOMContentLoaded", () => {
 
-menuButton.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("active");
+  /* =========================================================
+     MENÚ MÓVIL
+  ========================================================= */
 
-  menuButton.setAttribute("aria-expanded", isOpen);
-  menuButton.textContent = isOpen ? "✕" : "☰";
-});
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.textContent = "☰";
+  if (menuToggle && mainNav) {
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mainNav.classList.toggle("is-open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+    });
+
+    mainNav.querySelectorAll("a").forEach((link) => {
+
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("is-open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+      });
+
+    });
+
+  }
+
+
+  /* =========================================================
+     CARRUSELES
+     Funciona automáticamente con TODOS los .carousel
+  ========================================================= */
+
+  document.querySelectorAll(".carousel").forEach((carousel) => {
+
+    const track = carousel.querySelector(".carousel-track");
+    const prevButton = carousel.querySelector(".carousel-prev");
+    const nextButton = carousel.querySelector(".carousel-next");
+
+    if (!track) return;
+
+
+    /* ---------------------------------------------------------
+       Calcula cuánto debe avanzar según el tamaño real
+       de cada tarjeta.
+    --------------------------------------------------------- */
+
+    const getScrollAmount = () => {
+
+      const firstCard = track.firstElementChild;
+
+      if (!firstCard) {
+        return track.clientWidth * 0.8;
+      }
+
+      const trackStyles = window.getComputedStyle(track);
+
+      const gap =
+        parseFloat(trackStyles.columnGap) ||
+        parseFloat(trackStyles.gap) ||
+        0;
+
+      const cardWidth =
+        firstCard.getBoundingClientRect().width;
+
+      return cardWidth + gap;
+
+    };
+
+
+    /* ---------------------------------------------------------
+       FLECHA IZQUIERDA
+    --------------------------------------------------------- */
+
+    if (prevButton) {
+
+      prevButton.addEventListener("click", () => {
+
+        track.scrollBy({
+          left: -getScrollAmount(),
+          behavior: "smooth"
+        });
+
+      });
+
+    }
+
+
+    /* ---------------------------------------------------------
+       FLECHA DERECHA
+    --------------------------------------------------------- */
+
+    if (nextButton) {
+
+      nextButton.addEventListener("click", () => {
+
+        track.scrollBy({
+          left: getScrollAmount(),
+          behavior: "smooth"
+        });
+
+      });
+
+    }
+
   });
+
 });
