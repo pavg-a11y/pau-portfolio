@@ -2845,7 +2845,7 @@ strong {
   position: absolute;
   top: calc(100% + 14px);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-58%);
 
   width: max-content;
   max-width: 100%;
