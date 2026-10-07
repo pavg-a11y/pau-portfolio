@@ -2867,3 +2867,68 @@ strong {
   line-height: 1.1;
   color: var(--terracotta);
 }
+
+/* =========================================================
+   MICROINTERACCIONES — BOTONES
+========================================================= */
+
+/* Botones principales */
+.button,
+.nav-whatsapp,
+.carousel-arrow {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* Hover botones */
+.button:hover,
+.nav-whatsapp:hover {
+  transform: translateY(-3px);
+}
+
+/* Sensación de clic */
+.button:active,
+.nav-whatsapp:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Botón principal */
+.button-primary:hover,
+.contact-whatsapp:hover {
+  box-shadow: 0 10px 24px rgba(90, 33, 54, 0.16);
+}
+
+/* Botones secundarios */
+.button-secondary:hover {
+  box-shadow: 0 8px 20px rgba(90, 33, 54, 0.10);
+  border-color: rgba(90, 33, 54, 0.35);
+}
+
+/* Flechas de carruseles */
+.carousel-arrow:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 7px 18px rgba(90, 33, 54, 0.12);
+}
+
+.carousel-arrow:active {
+  transform: translateY(0) scale(0.96);
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .nav-whatsapp,
+  .carousel-arrow {
+    transition: none;
+  }
+
+  .button:hover,
+  .nav-whatsapp:hover,
+  .carousel-arrow:hover {
+    transform: none;
+  }
+}
