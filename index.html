@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
 
   <meta
@@ -10,62 +8,55 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    PV. | Account Management · Social Media · Content
-  </title>
-
   <meta
     name="description"
-    content="Portafolio profesional de Pau. Account Management, Social Media, creación de contenido, estrategia digital y producción audiovisual."
+    content="Portafolio de Paula Valenzuela — Estrategia digital, Social Media, Content Creation, Account Management y Producción Audiovisual."
   >
 
+  <title>Paula Valenzuela | Portafolio</title>
 
-  <!-- TIPOGRAFÍAS -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
-
-  <!-- ESTILOS -->
-  <link
-    rel="stylesheet"
-    href="styles.css"
-  >
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 
 <body>
 
+  <!-- ======================================================
+       HEADER / MENÚ
+  ======================================================= -->
 
-  <!-- ========================================
-       NAVEGACIÓN
-  ========================================= -->
+  <header class="site-header">
+    <div class="nav-container">
 
-  <header class="header">
-
-    <nav class="nav container">
-
-      <a
-        href="#inicio"
-        class="logo"
-        aria-label="Ir al inicio"
-      >
-        PV.
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        PV
       </a>
 
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#estrategia">Estrategia</a>
+        <a href="#audiovisual">Audiovisual</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a
+        href="#contacto"
+        class="nav-whatsapp"
+      >
+        WhatsApp ↗
+      </a>
 
       <button
         class="menu-toggle"
@@ -73,118 +64,71 @@
         aria-label="Abrir menú"
         aria-expanded="false"
       >
-        ☰
+        <span></span>
+        <span></span>
       </button>
 
-
-      <div class="nav-links">
-
-        <a href="#sobre-mi">
-          Sobre mí
-        </a>
-
-        <a href="#marcas">
-          Marcas
-        </a>
-
-        <a href="#aquamare">
-          Proyectos
-        </a>
-
-        <a href="#produccion">
-          Producción
-        </a>
-
-        <a href="#estrategia">
-          Estrategia
-        </a>
-
-        <a href="#servicios">
-          Experiencia
-        </a>
-
-        <a href="#contacto">
-          Contacto
-        </a>
-
-      </div>
-
-    </nav>
-
+    </div>
   </header>
-
 
 
   <main>
 
+    <!-- ======================================================
+         HOME
+    ======================================================= -->
 
-    <!-- ========================================
-         01 — HOME
-    ========================================= -->
+    <section id="inicio" class="hero section">
 
-    <section
-      id="inicio"
-      class="hero section"
-    >
+      <div class="hero-content reveal">
 
-      <div class="container hero-grid">
+        <h1 class="hero-title">
+          <span>Entre las ideas</span>
+          <span>y los resultados,</span>
+          <em>está la estrategia.</em>
+        </h1>
 
+        <p class="hero-roles">
+          Digital Strategist
+          <span>·</span>
+          Social Media
+          <span>·</span>
+          Content Creator
+          <span>·</span>
+          Account Management
+          <span>·</span>
+          Project Management
+        </p>
 
-        <!-- TEXTO -->
-        <div class="hero-copy">
+        <div class="hero-actions">
 
-          <h1>
+          <a href="#proyectos" class="button button-primary">
+            ✦ Ver mi trabajo
+          </a>
 
-            <span class="hero-line-main">
-              Entre las ideas y los resultados,
-            </span>
-
-            <span class="hero-line-script">
-              está la estrategia.
-            </span>
-
-          </h1>
-
-
-          <p class="hero-role">
-            Account Management · Social Media Manager · Content Creator
-          </p>
-
-
-          <div class="hero-actions">
-
-            <a
-              href="#sobre-mi"
-              class="button button-primary"
-            >
-              Ver mi trabajo ✦
-            </a>
-
-
-            <a
-              href="#"
-              class="button button-secondary whatsapp-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Hablemos por WhatsApp →
-            </a>
-
-          </div>
+          <a href="#contacto" class="button button-secondary">
+            Hablemos por WhatsApp →
+          </a>
 
         </div>
 
+      </div>
 
-        <!-- FOTO -->
-        <div class="hero-photo">
 
-          <img
-            src="images/pau-home.jpg"
-            alt="Pau - Account Management, Social Media Manager y Content Creator"
-          >
+      <div class="hero-visual reveal">
 
+        <!--
+          FOTO PRINCIPAL:
+          Cuando tengamos tu PNG definitivo reemplazamos
+          este placeholder.
+        -->
+
+        <div class="hero-photo-placeholder">
+          <span>Foto principal</span>
         </div>
 
+        <div class="hero-shape hero-shape-one"></div>
+        <div class="hero-shape hero-shape-two"></div>
 
       </div>
 
@@ -192,148 +136,92 @@
 
 
 
-    <!-- ========================================
-         02 — SOBRE MÍ
-    ========================================= -->
+    <!-- ======================================================
+         01 · SOBRE MÍ
+    ======================================================= -->
 
-    <section
-      id="sobre-mi"
-      class="about section"
-    >
+    <section id="sobre-mi" class="about section">
 
-      <div class="container about-grid">
+      <div class="section-inner about-layout">
 
-
-        <!-- LADO IZQUIERDO -->
-        <div class="about-copy">
-
+        <div class="about-copy reveal">
 
           <p class="eyebrow">
-            SOBRE MÍ
+            01 · SOBRE MÍ
           </p>
-
 
           <h2 class="about-title">
-
-            <span class="about-title-main">
-              Me gusta estar en ese punto donde
-            </span>
-
-            <span class="about-title-script">
-              una idea empieza a tomar forma.
-            </span>
-
+            <span>Me gusta estar en ese punto donde</span>
+            <em>una idea empieza a tomar forma.</em>
           </h2>
 
+          <div class="about-text">
 
-          <p>
-            Soy comunicadora social y periodista con experiencia en
-            <strong>
-              marketing digital, Social Media, estrategia de contenido,
-              copywriting y gestión de comunidades digitales
-            </strong>.
-            Me gusta transformar ideas en estrategias y acompañarlas hasta
-            convertirlas en acciones que conecten con las personas y respondan
-            a los objetivos de cada marca.
-          </p>
+            <p>
+              Soy comunicadora social y periodista con experiencia en
+              <strong>
+                marketing digital, Social Media, estrategia de contenido,
+                copywriting y gestión de comunidades digitales
+              </strong>.
+              Me gusta transformar ideas en estrategias y acompañarlas
+              hasta convertirlas en acciones que conecten con las personas
+              y respondan a los objetivos de cada marca.
+            </p>
 
+            <p>
+              Mi experiencia integra
+              <strong>creatividad, estrategia y análisis</strong>.
+              He gestionado diferentes cuentas y proyectos, trabajando de
+              la mano con clientes y equipos de trabajo, conectando frentes
+              como contenido, Dirección Creativa,
+              <strong>
+                Paid Media, redes sociales, SEO y administración de sitios web
+              </strong>,
+              e incorporando la
+              <strong>
+                IA como herramienta en procesos creativos y estratégicos
+              </strong>,
+              para explorar nuevas formas de idear, agilizar y potenciar
+              el trabajo.
+            </p>
 
-          <p>
-            Mi experiencia integra
-            <strong>
-              creatividad, estrategia y análisis
-            </strong>.
-            He gestionado diferentes cuentas y proyectos, trabajando de la mano
-            con clientes y equipos de trabajo, conectando frentes como contenido,
-            <strong>
-              Paid Media, SEO y web
-            </strong>,
-            e incorporando la
-            <strong>
-              IA como herramienta en procesos creativos y estratégicos
-            </strong>,
-            para explorar nuevas formas de idear, agilizar y potenciar el trabajo.
-          </p>
+            <p>
+              He trabajado con
+              <strong>Aviatur y diferentes marcas del sector hotelero</strong>,
+              creando contenido, liderando producciones audiovisuales y
+              encontrando oportunidades a partir del análisis de resultados.
+            </p>
 
+            <p class="about-closing">
+              <strong>
+                Me mueve crear ideas que tengan intención, pero también
+                hacer que pasen.
+              </strong>
+            </p>
 
-          <p>
-            He trabajado con
-            <strong>
-              Aviatur y diferentes marcas del sector hotelero
-            </strong>,
-            creando contenido, liderando producciones audiovisuales y encontrando
-            oportunidades a partir del análisis de resultados.
-          </p>
-
-
-          <p class="about-closing">
-            <strong>
-              Me mueve crear ideas que tengan intención, pero también hacer que pasen.
-            </strong>
-          </p>
-
+          </div>
 
         </div>
 
 
-        <!-- LADO DERECHO -->
-        <div class="results-cards">
+        <div class="about-stats reveal">
 
-
-          <article class="result-card">
-
-            <strong>
-              ROAS 32,55
-            </strong>
-
-            <p>
-              performance digital
-            </p>
-
+          <article class="stat-card">
+            <strong>+28%</strong>
+            <p>Crecimiento en ventas web</p>
           </article>
 
-
-          <article class="result-card">
-
-            <strong>
-              46%
-            </strong>
-
-            <p>
-              reservas con +90 días de anticipación
-            </p>
-
+          <article class="stat-card">
+            <strong>24,7</strong>
+            <p>ROAS</p>
           </article>
 
-
-          <article class="result-card">
-
-            <strong>
-              34%
-            </strong>
-
-            <p>
-              crecimiento en ventas en página web
-            </p>
-
+          <article class="stat-card">
+            <strong>10+</strong>
+            <p>Marcas gestionadas</p>
           </article>
-
-
-          <article class="result-card">
-
-            <strong>
-              $12.497.995
-            </strong>
-
-            <p>
-              promedio de ventas generadas vía Linktree
-            </p>
-
-          </article>
-
 
         </div>
-
 
       </div>
 
@@ -341,323 +229,119 @@
 
 
 
-    <!-- ========================================
-         03 — MARCAS
-    ========================================= -->
+    <!-- ======================================================
+         02 · TRAYECTORIA PROFESIONAL
+    ======================================================= -->
 
-    <section
-      id="marcas"
-      class="brands-journey section"
-    >
+    <section id="trayectoria" class="trajectory section">
 
-      <div class="container">
+      <div class="section-inner">
 
+        <div class="section-heading centered reveal">
 
-        <h2 class="brands-journey-title">
+          <p class="eyebrow">
+            02 · TRAYECTORIA PROFESIONAL
+          </p>
 
-          Marcas que han sido
-
-          <span>
-            parte del camino.
-          </span>
-
-        </h2>
-
-
-        <div class="brand-pills brand-pills-compact">
-
-
-          <span class="brand-pill">
-            Aquamare
-          </span>
-
-
-          <span class="brand-pill">
-            Sea Avenue
-          </span>
-
-
-          <span class="brand-pill">
-            Bahía Sardina
-          </span>
-
-
-          <span class="brand-pill">
-            Poblado
-          </span>
-
-
-          <span class="brand-pill">
-            Hotel Campestre La Potra
-          </span>
-
-
-          <span class="brand-pill">
-            Aqualina
-          </span>
-
-
-          <span class="brand-pill">
-            Marina Puerto Velero
-          </span>
-
-
-          <span class="brand-pill">
-            Playa Hawai
-          </span>
-
+          <h2>
+            <span>Una experiencia construida</span>
+            <em>a través de proyectos.</em>
+          </h2>
 
         </div>
 
 
-      </div>
+        <!-- EXPERIENCIA AVIA -->
 
-    </section>
+        <article class="trajectory-main-card reveal">
 
-
-
-    <!-- ========================================
-         04 — PROYECTO AQUAMARE
-    ========================================= -->
-
-    <section
-      id="aquamare"
-      class="project project-aquamare section"
-    >
-
-      <div class="container">
-
-
-        <!-- ENCABEZADO -->
-        <div class="project-header">
-
-
-          <div class="project-title-block">
-
-
-            <p class="project-number project-label">
-              PROYECTO DESTACADO
-            </p>
-
-
-            <h2>
-              Aquamare Hotel
-            </h2>
-
-
-            <p class="project-tags">
-              Contenido · Campañas · Audiovisual · Resultados
-            </p>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- IMAGEN PRINCIPAL -->
-        <div class="project-hero-image">
-
-          <img
-            src="images/aquamare-principal.jpg"
-            alt="Aquamare Hotel"
-          >
-
-        </div>
-
-
-
-        <!-- RETO -->
-        <div class="project-text-block">
-
-
-          <div>
-
-            <h3>
-              El reto.
-            </h3>
-
-          </div>
-
-
-          <div>
-
-            <p>
-              Consolidar la presencia digital del hotel a través de contenido
-              atractivo, experiencias reales y campañas que conectaran su propuesta
-              con diferentes públicos.
-            </p>
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- MI ROL -->
-        <div class="project-role">
-
+          <p class="trajectory-company">
+            GRUPO AVIATUR · 2023 — HOY
+          </p>
 
           <h3>
-            Mi rol
+            Avia Soluciones Hoteleras
           </h3>
 
+          <p class="trajectory-role">
+            Community Manager | Account Manager
+          </p>
 
-          <div class="role-pills">
+          <p class="trajectory-description">
+            Inicié como <strong>Community Manager</strong>, gestionando
+            redes sociales, contenido, campañas y liderando producciones
+            audiovisuales. Mi crecimiento dentro de Avia me llevó a asumir
+            el rol de <strong>Account Manager</strong>, gestionando hasta
+            8 cuentas y ampliando mi experiencia hacia la gestión de
+            clientes, coordinación de proyectos, manejo de equipos de
+            trabajo, estrategia digital, posicionamiento de marca,
+            administración web, SEO, Paid Media, análisis de resultados
+            y optimización de acciones digitales.
+          </p>
 
-
-            <span>
-              ✦ Estrategia de contenido
-            </span>
-
-
-            <span>
-              ✦ Community Management
-            </span>
-
-
-            <span>
-              ✦ Conceptualización de campañas
-            </span>
-
-
-            <span>
-              ✦ Producción audiovisual
-            </span>
-
-
-            <span>
-              ✦ Dirección de contenido
-            </span>
-
-
-            <span>
-              ✦ Análisis de resultados
-            </span>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- GALERÍA -->
-        <div class="project-content-gallery">
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-01.jpg"
-              alt="Contenido Aquamare 01"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-02.jpg"
-              alt="Contenido Aquamare 02"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-03.jpg"
-              alt="Contenido Aquamare 03"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-04.jpg"
-              alt="Contenido Aquamare 04"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-05.jpg"
-              alt="Contenido Aquamare 05"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-06.jpg"
-              alt="Contenido Aquamare 06"
-            >
-
-          </div>
-
-
-          <div class="content-item">
-
-            <img
-              src="images/aquamare-07.jpg"
-              alt="Contenido Aquamare 07"
-            >
-
-          </div>
-
-
-        </div>
-
+        </article>
 
 
         <!-- RESULTADOS -->
-        <div class="project-results">
 
+        <div class="trajectory-stats reveal">
 
-          <div>
+          <article class="metric-card">
+            <strong>+27%</strong>
+            <p>Crecimiento en ventas</p>
+          </article>
 
-            <h3>
-              Las ideas también tenían que dar
-              <span>
-                resultados.
-              </span>
-            </h3>
-
-          </div>
-
-
-          <div class="project-main-result">
-
-
-            <strong>
-              $14.146.806
-            </strong>
-
-
+          <article class="metric-card">
+            <strong>360°</strong>
             <p>
-              Promedio de ventas a través de redes sociales
+              Estrategia integrada:
+              web · redes · SEO · SEM
             </p>
+          </article>
 
+          <article class="metric-card">
+            <strong>29,1x ROAS</strong>
+            <p>Estrategias de Paid Media</p>
+          </article>
 
-          </div>
-
+          <article class="metric-card">
+            <strong>10+</strong>
+            <p>
+              Gestionadas simultáneamente como Account Manager
+            </p>
+          </article>
 
         </div>
 
+
+        <!-- MARCAS -->
+
+        <div class="brands-block reveal">
+
+          <p class="eyebrow centered">
+            MARCAS QUE HAN SIDO PARTE DEL CAMINO
+          </p>
+
+          <div class="brands-row brands-row-one">
+
+            <span class="brand-pill">Aquamare Hotel</span>
+            <span class="brand-pill">Sea Avenue Hotel</span>
+            <span class="brand-pill">Bahía Sardina</span>
+            <span class="brand-pill">Praia Natura</span>
+
+          </div>
+
+          <div class="brands-row brands-row-two">
+
+            <span class="brand-pill">Hotel Poblado</span>
+            <span class="brand-pill">Hotel Campestre La Potra</span>
+            <span class="brand-pill">Aqualina Hotel</span>
+            <span class="brand-pill">Marina Puerto Velero</span>
+            <span class="brand-pill">Playa Hawai</span>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -665,816 +349,462 @@
 
 
 
-    <!-- ========================================
-         05 — SEA AVENUE
-    ========================================= -->
+    <!-- ======================================================
+         03 · PROYECTOS DESTACADOS
+    ======================================================= -->
 
-    <section
-      id="sea-avenue"
-      class="project project-sea-avenue section"
-    >
+    <section id="proyectos" class="projects section">
 
-      <div class="container">
+      <div class="section-inner">
 
-
-        <!-- ENCABEZADO -->
-        <div class="project-header sea-header">
+        <p class="eyebrow reveal">
+          03 · PROYECTOS DESTACADOS
+        </p>
 
 
-          <div class="project-title-block">
+        <!-- ==================================================
+             AQUAMARE
+        =================================================== -->
+
+        <article class="project project-aquamare">
+
+          <div class="project-intro project-grid reveal">
+
+            <div class="project-copy">
+
+              <h2>Aquamare Hotel</h2>
+
+              <p>
+                Trabajé con la marca desde diferentes frentes digitales:
+                estrategia de contenido y Social Media, gestión de comunidad,
+                campañas comerciales, de posicionamiento y producción
+                audiovisual. También participé en la conceptualización y
+                dirección de producciones, creación de contenido para
+                experiencias del hotel y acciones orientadas a conectar
+                la presencia en redes con la generación de ventas.
+              </p>
+
+              <p>
+                Durante mi gestión, la comunidad creció de
+                <strong>25K a 46K seguidores</strong> y se generaron más de
+                <strong>
+                  $14 millones en ventas a través de redes sociales.
+                </strong>
+              </p>
+
+            </div>
 
 
-            <p class="project-number project-label">
-              EVOLUCIÓN DE MARCA
+            <div class="carousel project-carousel aquamare-carousel">
+
+              <button
+                class="carousel-arrow carousel-prev"
+                type="button"
+                aria-label="Contenido anterior"
+              >
+                ←
+              </button>
+
+              <div class="carousel-track">
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 01</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 02</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 03</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 04</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 05</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 06</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 07</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 08</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 09</div>
+                </article>
+
+                <article class="media-card">
+                  <div class="media-placeholder">Aquamare 10</div>
+                </article>
+
+              </div>
+
+              <button
+                class="carousel-arrow carousel-next"
+                type="button"
+                aria-label="Contenido siguiente"
+              >
+                →
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ==================================================
+             SEA AVENUE
+        =================================================== -->
+
+        <article class="project project-sea-avenue">
+
+          <div class="project-intro project-grid reveal">
+
+            <div class="project-copy">
+
+              <h2>Sea Avenue Hotel</h2>
+
+              <p>
+                En esta marca acompañé la evolución de su presencia en
+                redes desde el Community Management, desarrollando la
+                estrategia de contenidos y una renovación de marca
+                orientada a fortalecer su identidad digital. Gestioné
+                la comunidad y el contenido de influencers, además de
+                participar en la conceptualización y producción
+                audiovisual de la marca.
+              </p>
+
+              <p>
+                Durante mi gestión, la comunidad creció de
+                <strong>7K a 14K seguidores</strong> y las acciones desde
+                redes generaron más de
+                <strong>
+                  $10 millones en ventas a través de redes sociales.
+                </strong>
+              </p>
+
+            </div>
+
+
+            <!-- ANTES / DESPUÉS -->
+
+            <div class="phone-comparison">
+
+              <div class="phone-item">
+
+                <p class="phone-label">Antes</p>
+
+                <div class="phone-mockup">
+                  <div class="phone-screen">
+                    <span>Contenido anterior</span>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="phone-item">
+
+                <p class="phone-label">Después</p>
+
+                <div class="phone-mockup">
+                  <div class="phone-screen">
+                    <span>Contenido renovado</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CARRUSEL SEA AVENUE -->
+
+          <div class="carousel project-carousel sea-carousel reveal">
+
+            <button
+              class="carousel-arrow carousel-prev"
+              type="button"
+              aria-label="Contenido anterior"
+            >
+              ←
+            </button>
+
+            <div class="carousel-track">
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 01</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 02</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 03</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 04</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 05</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 06</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 07</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 08</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 09</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Sea Avenue 10</div>
+              </article>
+
+            </div>
+
+            <button
+              class="carousel-arrow carousel-next"
+              type="button"
+              aria-label="Contenido siguiente"
+            >
+              →
+            </button>
+
+          </div>
+
+
+          <!-- NUEVA MIRADA -->
+
+          <div class="sea-evolution reveal">
+
+            <h3>
+              <span>Hoy miro la marca desde</span>
+              <em>otro lugar.</em>
+            </h3>
+
+            <div class="sea-evolution-card">
+
+              <p>
+                En <strong>Sea Avenue Hotel</strong> orienté la estrategia
+                a fortalecer la venta directa y mejorar la anticipación
+                de las reservas. A través de una estrategia integrada en
+                los diferentes canales del hotel, impulsamos su promoción
+                más competitiva para aumentar las reservas con más de
+                90 días de anticipación, pasando de representar un
+                <strong>26% a un 55%</strong> y contribuyendo a construir
+                ocupación con mayor previsión.
+              </p>
+
+              <p>
+                También ampliamos el alcance de la marca hacia nuevos
+                mercados en <strong>LATAM y Europa</strong>, combinando
+                Paid Media y posicionamiento orgánico para fortalecer
+                la presencia internacional del hotel.
+              </p>
+
+              <p>
+                La estrategia alcanzó un <strong>ROAS de 24,7</strong>
+                y un <strong>crecimiento del 9% en ventas web</strong>.
+              </p>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         04 · ESTRATEGIA DIGITAL
+    ======================================================= -->
+
+    <section id="estrategia" class="strategy section">
+
+      <div class="section-inner">
+
+        <div class="strategy-layout">
+
+          <div class="strategy-intro reveal">
+
+            <p class="eyebrow">
+              04 · ESTRATEGIA DIGITAL EN ACCIÓN
             </p>
-
 
             <h2>
-              Sea Avenue Hotel
+              No todas las marcas necesitan la misma estrategia
             </h2>
 
-
-            <h3 class="project-subtitle">
-
-              Una marca que también
-
-              <span>
-                acompañó mi evolución.
-              </span>
-
-            </h3>
-
+            <p>
+              Cada cuenta parte de un reto distinto, por eso, mi trabajo
+              comienza por entender qué está pasando, encontrar dónde
+              está la oportunidad y definir qué acciones pueden generar
+              un impacto real.
+            </p>
 
           </div>
 
 
-        </div>
+          <div class="strategy-steps reveal">
 
-
-
-        <!-- EVOLUCIÓN -->
-        <div class="evolution-grid">
-
-
-          <article class="evolution-item">
-
-
-            <span class="evolution-number">
-              01
-            </span>
-
-
-            <h4>
-              Community Manager
-            </h4>
-
-
-            <p>
-              Estrategia de contenidos · Gestión de comunidad · Campañas
-            </p>
-
-
-          </article>
-
-
-
-          <article class="evolution-item">
-
-
-            <span class="evolution-number">
-              02
-            </span>
-
-
-            <h4>
-              Content &amp; Producción
-            </h4>
-
-
-            <p>
-              Conceptualización · Producción audiovisual · Dirección de contenido
-            </p>
-
-
-          </article>
-
-
-
-          <article class="evolution-item">
-
-
-            <span class="evolution-number">
-              03
-            </span>
-
-
-            <h4>
-              Estrategia Digital
-            </h4>
-
-
-            <p>
-              Análisis · Paid Media · SEO · Web · Ventas directas · Optimización
-            </p>
-
-
-          </article>
-
-
-        </div>
-
-
-
-        <!-- CONTENIDO -->
-        <div class="sea-content">
-
-
-          <h3>
-
-            Cuando el contenido era el
-
-            <span>
-              punto de partida.
-            </span>
-
-          </h3>
-
-
-
-          <div class="sea-gallery">
-
-
-            <div class="content-item">
-
-              <img
-                src="images/sea-avenue-01.jpg"
-                alt="Contenido Sea Avenue 01"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/sea-avenue-02.jpg"
-                alt="Contenido Sea Avenue 02"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/sea-avenue-03.jpg"
-                alt="Contenido Sea Avenue 03"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/sea-avenue-04.jpg"
-                alt="Contenido Sea Avenue 04"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/sea-avenue-05.jpg"
-                alt="Contenido Sea Avenue 05"
-              >
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- RESULTADO -->
-        <div class="sea-result">
-
-
-          <div>
-
-            <h3>
-
-              Las ideas también se convirtieron en
-
-              <span>
-                resultados.
-              </span>
-
-            </h3>
-
-          </div>
-
-
-          <div class="project-main-result">
-
-
-            <strong>
-              $10.849.184
-            </strong>
-
-
-            <p>
-              en ventas desde redes sociales
-            </p>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- EVOLUCIÓN FINAL -->
-        <div class="sea-evolution-closing">
-
-
-          <h3>
-
-            Hoy miro la marca desde
-
-            <span>
-              otro lugar.
-            </span>
-
-          </h3>
-
-
-          <p>
-
-            Mi trabajo con Sea Avenue evolucionó hacia una
-
-            <strong>
-              mirada integral de su ecosistema digital
-            </strong>,
-
-            conectando performance, web, SEO, comunicación y resultados comerciales.
-
-          </p>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================
-         06 — PRODUCCIÓN AUDIOVISUAL
-    ========================================= -->
-
-    <section
-      id="produccion"
-      class="production section"
-    >
-
-      <div class="container">
-
-
-        <!-- INTRO -->
-        <div class="production-intro">
-
-
-          <p class="eyebrow">
-            PRODUCCIÓN AUDIOVISUAL
-          </p>
-
-
-          <h2>
-
-            Hay ideas que no terminan en un documento.
-
-            <span>
-              Terminan en un set.
-            </span>
-
-          </h2>
-
-
-        </div>
-
-
-
-        <!-- DATOS -->
-        <div class="production-numbers">
-
-
-          <article class="production-stat">
-
-
-            <strong>
-              2
-            </strong>
-
-
-            <div class="production-stat-copy">
-
-
-              <h3>
-                producciones audiovisuales
-              </h3>
-
+            <article class="strategy-card">
+              <strong>01 ·</strong>
 
               <p>
-                en San Andrés Islas
+                Analizo el comportamiento de la marca, sus canales,
+                resultados y oportunidades para entender dónde estamos
+                y qué necesita cambiar.
               </p>
+            </article>
 
 
-            </div>
-
-
-          </article>
-
-
-
-          <article class="production-stat">
-
-
-            <strong>
-              8
-            </strong>
-
-
-            <div class="production-stat-copy">
-
-
-              <h3>
-                hoteles por producción
-              </h3>
-
-
-            </div>
-
-
-          </article>
-
-
-        </div>
-
-
-
-        <!-- PROCESO -->
-        <div class="production-process">
-
-
-          <article class="process-card">
-
-
-            <span class="process-number">
-              01
-            </span>
-
-
-            <h3>
-              ANTES DE VIAJAR
-            </h3>
-
-
-            <p>
-              Conceptualización · investigación · moodboards · guiones ·
-              cronogramas · coordinación · locaciones · talento/modelos.
-            </p>
-
-
-          </article>
-
-
-
-          <article class="process-card">
-
-
-            <span class="process-number">
-              02
-            </span>
-
-
-            <h3>
-              DURANTE LA PRODUCCIÓN
-            </h3>
-
-
-            <p>
-              Dirección de contenido · coordinación del equipo · supervisión
-              de tomas · styling · resolución de imprevistos.
-            </p>
-
-
-          </article>
-
-
-
-          <article class="process-card">
-
-
-            <span class="process-number">
-              03
-            </span>
-
-
-            <h3>
-              DESPUÉS DE LA PRODUCCIÓN
-            </h3>
-
-
-            <p>
-              Selección del material · aprobación de piezas · conversión del
-              material en parrillas y campañas · medición posterior de resultados.
-            </p>
-
-
-          </article>
-
-
-        </div>
-
-
-
-        <!-- DETRÁS DE CÁMARA -->
-        <div class="bts-section">
-
-
-          <h3>
-
-            San Andrés,
-
-            <span>
-              detrás de cámara.
-            </span>
-
-          </h3>
-
-
-
-          <div class="bts-gallery">
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-01.jpg"
-                alt="Producción audiovisual en San Andrés 01"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-02.jpg"
-                alt="Producción audiovisual en San Andrés 02"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-03.jpg"
-                alt="Producción audiovisual en San Andrés 03"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-04.jpg"
-                alt="Producción audiovisual en San Andrés 04"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-05.jpg"
-                alt="Producción audiovisual en San Andrés 05"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-06.jpg"
-                alt="Producción audiovisual en San Andrés 06"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/bts-07.jpg"
-                alt="Producción audiovisual en San Andrés 07"
-              >
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- PLOT TWIST -->
-        <div class="production-plot-twist">
-
-
-          <p class="plot-label">
-            ✦ PLOT TWIST ✦
-          </p>
-
-
-          <h3>
-
-            También terminé frente a la
-
-            <span>
-              cámara.
-            </span>
-
-          </h3>
-
-
-          <p class="plot-subtitle">
-            Porque en producción a veces toca dirigir, coordinar, resolver…
-            y otras veces ser la modelo.
-          </p>
-
-
-
-          <div class="model-gallery">
-
-
-            <div class="content-item">
-
-              <img
-                src="images/pau-produccion-01.jpg"
-                alt="Pau durante producción audiovisual 01"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/pau-produccion-02.jpg"
-                alt="Pau durante producción audiovisual 02"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/pau-produccion-03.jpg"
-                alt="Pau durante producción audiovisual 03"
-              >
-
-            </div>
-
-
-            <div class="content-item">
-
-              <img
-                src="images/pau-produccion-04.jpg"
-                alt="Pau durante producción audiovisual 04"
-              >
-
-            </div>
-
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- ========================================
-         07 — ESTRATEGIA DIGITAL
-    ========================================= -->
-
-    <section
-      id="estrategia"
-      class="digital-strategy section"
-    >
-
-      <div class="container">
-
-
-        <!-- ENCABEZADO -->
-        <div class="strategy-heading">
-
-
-          <p class="eyebrow">
-            ESTRATEGIA DIGITAL EN ACCIÓN
-          </p>
-
-
-          <h2>
-
-            No todas las marcas<br>
-
-            necesitan la misma
-
-            <span>
-              estrategia.
-            </span>
-
-          </h2>
-
-
-        </div>
-
-
-
-        <!-- CASOS -->
-        <div class="strategy-grid">
-
-
-          <!-- LA POTRA -->
-          <article class="strategy-card">
-
-
-            <h3>
-              LA POTRA
-            </h3>
-
-
-            <div class="strategy-metrics">
-
-
-              <div class="strategy-metric">
-
-
-                <strong>
-                  ROAS 32,55
-                </strong>
-
-
-                <p>
-                  performance digital
-                </p>
-
-
-              </div>
-
-
-
-              <div class="strategy-metric">
-
-
-                <strong>
-                  +34 %
-                </strong>
-
-
-                <p>
-                  crecimiento en ventas en página web
-                </p>
-
-
-              </div>
-
-
-            </div>
-
-
-          </article>
-
-
-
-          <!-- BAHÍA SARDINA -->
-          <article class="strategy-card">
-
-
-            <h3>
-              BAHÍA SARDINA
-            </h3>
-
-
-            <div class="strategy-metric">
-
-
-              <strong>
-                46 %
-              </strong>
-
+            <article class="strategy-card">
+              <strong>02 ·</strong>
 
               <p>
-                de las reservas con +90 días
-              </p>
-
-
-            </div>
-
-
-            <p class="strategy-description">
-              Un comportamiento de compra que convierte la anticipación
-              en una oportunidad estratégica.
-            </p>
-
-
-          </article>
-
-
-
-          <!-- SEA AVENUE -->
-          <article class="strategy-card">
-
-
-            <h3>
-              SEA AVENUE
-            </h3>
-
-
-            <h4>
-
-              Del alcance a la
-
-              <span>
+                Identifico cómo se comporta el usuario en cada etapa
+                y qué puntos podemos fortalecer para acercarlo a la
                 conversión.
-              </span>
-
-            </h4>
-
-
-            <p class="strategy-description">
-              Una estrategia donde marca y performance trabajan juntas
-              para fortalecer los canales directos y acompañar al usuario
-              desde el interés hasta la reserva.
-            </p>
+              </p>
+            </article>
 
 
-          </article>
-
-
-
-          <!-- POBLADO -->
-          <article class="strategy-card">
-
-
-            <h3>
-              POBLADO
-            </h3>
-
-
-            <div class="strategy-metric">
-
-
-              <strong>
-                +9 %
-              </strong>
-
+            <article class="strategy-card">
+              <strong>03 ·</strong>
 
               <p>
-                crecimiento en ventas frente al mismo periodo del año anterior
+                Ajusto campañas, canales y acciones a partir de los datos
+                para mejorar el desempeño y aprovechar nuevas oportunidades.
+              </p>
+            </article>
+
+
+            <article class="strategy-card">
+              <strong>04 ·</strong>
+
+              <p>
+                Potencio lo que funciona, amplío oportunidades y llevo
+                la estrategia hacia nuevos mercados, audiencias y resultados.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- CASO BAHÍA SARDINA -->
+
+        <div class="case-study reveal">
+
+          <p class="eyebrow centered">
+            DEL MÉTODO A LA ACCIÓN
+          </p>
+
+          <div class="case-study-card">
+
+            <h3>Hotel Bahía Sardina</h3>
+
+            <div class="case-study-copy">
+
+              <p>
+                Esta marca ya tenía un fuerte posicionamiento y una alta
+                demanda anticipada. El reto estaba en
+                <strong>
+                  llevar una mayor parte de esa demanda hacia el canal
+                  directo y ampliar su alcance internacional.
+                </strong>
               </p>
 
+              <p>
+                La estrategia partió de actualizar y segmentar audiencias,
+                incorporar remarketing y optimizar las keywords de Google
+                Ads. A partir de ahí, ampliamos la pauta hacia
+                <strong>
+                  Brasil, Argentina, Chile y Estados Unidos
+                </strong>,
+                mientras fortalecíamos la venta directa con beneficios
+                diferenciales frente a las OTAs y comunicaciones enfocadas
+                en impulsar la reserva anticipada.
+              </p>
+
+              <p>
+                El trabajo se extendió al posicionamiento orgánico,
+                optimizando
+                <strong>
+                  web, imágenes y contenidos con keywords específicas
+                  para cada mercado e idioma
+                </strong>,
+                aprovechando uno de los canales con mayor potencial
+                de la marca.
+              </p>
 
             </div>
 
 
-          </article>
+            <p class="results-label">
+              Logrando:
+            </p>
 
+
+            <div class="case-results">
+
+              <article class="result-card">
+                <strong>+28%</strong>
+                <p>Crecimiento en ventas web</p>
+              </article>
+
+              <article class="result-card">
+                <strong>24,7</strong>
+                <p>ROAS</p>
+              </article>
+
+              <article class="result-card">
+                <strong>51,63%</strong>
+                <p>Conversión desde Paid Search</p>
+              </article>
+
+              <article class="result-card">
+                <strong>12,65%</strong>
+                <p>Conversión desde Organic Search</p>
+              </article>
+
+            </div>
+
+          </div>
 
         </div>
-
 
       </div>
 
@@ -1482,298 +812,509 @@
 
 
 
-    <!-- ========================================
-         08 — EXPERIENCIA
-    ========================================= -->
+    <!-- ======================================================
+         05 · AUDIOVISUAL
+    ======================================================= -->
 
-    <section
-      id="servicios"
-      class="services section"
-    >
+    <section id="audiovisual" class="audiovisual section">
 
-      <div class="container">
+      <div class="section-inner">
 
-
-        <!-- ENCABEZADO -->
-        <div class="services-heading">
-
+        <div class="section-heading centered reveal">
 
           <p class="eyebrow">
-            EXPERIENCIA
+            05 · CUANDO LA ESTRATEGIA ENTRA EN ESCENA
           </p>
 
-
-          <h2>
-
-            Proyectos que hago
-
-            <span>
-              realidad.
-            </span>
-
+          <h2 class="audiovisual-title">
+            <em>
+              Hay ideas que no terminan en un documento,
+              terminan en un set.
+            </em>
           </h2>
 
+        </div>
+
+
+        <!-- SAN ANDRÉS -->
+
+        <div class="production-block">
+
+          <h3 class="production-location reveal">
+            San Andrés Islas · 2023 | 2025
+          </h3>
+
+
+          <div class="production-numbers reveal">
+
+            <div class="production-stat">
+              <strong>2</strong>
+              <span>producciones audiovisuales</span>
+            </div>
+
+            <div class="production-stat">
+              <strong>8</strong>
+              <span>hoteles por proyecto</span>
+            </div>
+
+            <div class="production-stat">
+              <strong>17</strong>
+              <span>días de rodaje</span>
+            </div>
+
+          </div>
+
+
+          <div class="production-story reveal">
+
+            <div class="production-story-space"></div>
+
+            <div class="production-story-copy">
+
+              <p>
+                Cada proyecto comenzó mucho antes de llegar al set; en
+                primer lugar, participé en la
+                <strong>
+                  conceptualización, guiones, shot list, selección de
+                  talentos, vestuario, locaciones y planeación de las jornadas
+                </strong>,
+                coordinando cada detalle junto al equipo audiovisual;
+                luego, durante el rodaje,
+                <strong>lideré la dirección en set</strong>,
+                guiando talentos y supervisando que cada toma respondiera
+                al concepto y a las necesidades de cada marca; por último,
+                participé en la
+                <strong>
+                  selección del material, revisión y aprobación de piezas
+                </strong>,
+                definiendo los contenidos que finalmente alimentarían
+                la estrategia digital de cada hotel.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- BTS CARRUSEL -->
+
+          <div class="carousel production-carousel reveal">
+
+            <button
+              class="carousel-arrow carousel-prev"
+              type="button"
+              aria-label="Imagen anterior"
+            >
+              ←
+            </button>
+
+            <div class="carousel-track">
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 01</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 02</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 03</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 04</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 05</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Behind the scenes 06</div>
+              </article>
+
+            </div>
+
+            <button
+              class="carousel-arrow carousel-next"
+              type="button"
+              aria-label="Imagen siguiente"
+            >
+              →
+            </button>
+
+          </div>
+
+
+          <!-- RESULTADO PRODUCCIONES -->
+
+          <h3 class="alive-title reveal">
+            <em>Así cobró vida</em>
+          </h3>
+
+
+          <div class="carousel hotel-production-carousel reveal">
+
+            <button
+              class="carousel-arrow carousel-prev"
+              type="button"
+              aria-label="Contenido anterior"
+            >
+              ←
+            </button>
+
+            <div class="carousel-track">
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">01</div>
+                <p>The Providence</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">02</div>
+                <p>Aquamare Hotel</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">03</div>
+                <p>Sea Avenue Hotel</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">04</div>
+                <p>Samawi Hotel</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">05</div>
+                <p>Hotel Bahía Sardina</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">06</div>
+                <p>Hotel Aqualina Inn</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">07</div>
+                <p>Hotel Américas</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">08</div>
+                <p>Hotel Portobelo</p>
+              </article>
+
+              <article class="hotel-media-card">
+                <div class="media-placeholder">09</div>
+                <p>Hotel Caribbean Coral</p>
+              </article>
+
+            </div>
+
+            <button
+              class="carousel-arrow carousel-next"
+              type="button"
+              aria-label="Contenido siguiente"
+            >
+              →
+            </button>
+
+          </div>
+
+
+          <!-- PLOT TWIST -->
+
+          <div class="plot-twist reveal">
+
+            <h3>
+              ✦ PLOT TWIST ✦
+            </h3>
+
+            <p>
+              También terminé frente a la cámara, esta vez,
+              como parte de la escena.
+            </p>
+
+          </div>
+
+
+          <div class="camera-grid reveal">
+
+            <div class="camera-placeholder">
+              Frente a cámara 01
+            </div>
+
+            <div class="camera-placeholder">
+              Frente a cámara 02
+            </div>
+
+            <div class="camera-placeholder">
+              Frente a cámara 03
+            </div>
+
+            <div class="camera-placeholder">
+              Frente a cámara 04
+            </div>
+
+          </div>
 
         </div>
 
 
 
-        <!-- SERVICIOS -->
+        <!-- ==================================================
+             BOGOTÁ
+        =================================================== -->
+
+        <div class="production-block bogota-production">
+
+          <h3 class="production-location reveal">
+            Bogotá D.C. · 2024 — hoy
+          </h3>
+
+
+          <div class="bogota-story reveal">
+
+            <h3>
+              <em>Crear también es estar ahí</em>
+            </h3>
+
+            <div class="bogota-copy">
+
+              <p>
+                En Bogotá he trabajado el contenido desde diferentes
+                roles para marcas como
+                <strong>
+                  Vou Suites, Hotel Virrey Central y Hotel Rosales Plaza
+                </strong>.
+                En algunos proyectos he estado
+                <strong>desde el inicio</strong>,
+                construyendo la línea de contenido, definiendo conceptos,
+                planeando piezas y llevando cada idea hasta su ejecución.
+              </p>
+
+              <p>
+                En otros, además de trabajar en la estrategia y creación
+                de contenido,
+                <strong>también he sido la imagen frente a cámara</strong>,
+                participando en piezas enfocadas en comunicar las
+                experiencias, servicios y propuestas de cada hotel.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="carousel bogota-carousel reveal">
+
+            <button
+              class="carousel-arrow carousel-prev"
+              type="button"
+              aria-label="Contenido anterior"
+            >
+              ←
+            </button>
+
+            <div class="carousel-track">
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 01</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 02</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 03</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 04</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 05</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 06</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 07</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 08</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 09</div>
+              </article>
+
+              <article class="media-card">
+                <div class="media-placeholder">Bogotá 10</div>
+              </article>
+
+            </div>
+
+            <button
+              class="carousel-arrow carousel-next"
+              type="button"
+              aria-label="Contenido siguiente"
+            >
+              →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ======================================================
+         06 · EXPERIENCIA
+    ======================================================= -->
+
+    <section id="experiencia" class="experience section">
+
+      <div class="section-inner">
+
+        <div class="experience-heading reveal">
+
+          <p class="eyebrow">
+            06 · EXPERIENCIA
+          </p>
+
+          <h2>
+            Proyectos que hago realidad
+          </h2>
+
+        </div>
+
+
         <div class="services-grid">
 
-
           <!-- 01 -->
-          <article class="service-card">
 
+          <article class="service-card reveal">
 
-            <span class="service-number">
-              01
-            </span>
-
+            <span class="service-number">01</span>
 
             <h3>
               Account Management
             </h3>
 
-
-            <p class="service-description">
-              Gestiono cuentas y proyectos digitales conectando objetivos,
-              estrategia, ejecución y resultados. Coordino diferentes frentes,
-              hago seguimiento al desempeño e identifico oportunidades para
-              optimizar las acciones y mantener cada proyecto avanzando hacia
-              sus objetivos.
+            <p>
+              Conecto estrategia, equipos y ejecución para que cada
+              proyecto avance con dirección y responda a objetivos claros.
             </p>
 
-
-            <ul class="service-list">
-
-
-              <li>
-                Estrategia y planeación digital
-              </li>
-
-
-              <li>
-                Gestión y seguimiento de proyectos
-              </li>
-
-
-              <li>
-                Análisis de métricas &amp; reporting
-              </li>
-
-
-              <li>
-                Optimización y oportunidades de crecimiento
-              </li>
-
-
-              <li>
-                Paid Media, SEO &amp; administración de sitios web
-              </li>
-
-
-            </ul>
-
+            <p class="service-skills">
+              Estrategia digital · Gestión de proyectos · Analítica &amp;
+              reporting · Paid Media · SEO · Web · Optimización
+            </p>
 
           </article>
 
 
-
           <!-- 02 -->
-          <article class="service-card service-card-featured">
 
+          <article class="service-card service-card-featured reveal">
 
-            <span class="service-number">
-              02
-            </span>
-
+            <span class="service-number">02</span>
 
             <h3>
               Social Media Manager &amp; Content Creator
             </h3>
 
-
-            <p class="service-description">
-              Creo y gestiono contenido pensado para cada plataforma,
-              conectando las necesidades de la marca con las dinámicas
-              de las redes sociales y su audiencia, desde la planeación
-              hasta la publicación.
+            <p>
+              Construyo la presencia digital de una marca desde la
+              estrategia hasta el contenido que finalmente llega a
+              su comunidad.
             </p>
 
-
-            <ul class="service-list">
-
-
-              <li>
-                Estrategia y parrillas de contenido
-              </li>
-
-
-              <li>
-                Copywriting para canales digitales
-              </li>
-
-
-              <li>
-                Gestión de redes y comunidades
-              </li>
-
-
-              <li>
-                Tendencias, formatos &amp; oportunidades de contenido
-              </li>
-
-
-            </ul>
-
+            <p class="service-skills">
+              Estrategia de contenido · Social Media · Copywriting ·
+              Community Management · Tendencias &amp; formatos
+            </p>
 
           </article>
 
 
-
           <!-- 03 -->
-          <article class="service-card">
 
+          <article class="service-card reveal">
 
-            <span class="service-number">
-              03
-            </span>
-
+            <span class="service-number">03</span>
 
             <h3>
               Producción Audiovisual
             </h3>
 
-
-            <p class="service-description">
-              Lidero la ejecución de producciones audiovisuales, organizando
-              los recursos, equipos y etapas necesarias para llevar una idea
-              desde la planeación hasta el resultado final, cuidando que cada
-              pieza responda al concepto y objetivo de la marca.
+            <p>
+              Llevo una idea desde su conceptualización hasta la pieza
+              final, coordinando cada etapa y tomando decisiones creativas
+              durante todo el proceso.
             </p>
 
-
-            <ul class="service-list">
-
-
-              <li>
-                Preproducción y planeación
-              </li>
-
-
-              <li>
-                Coordinación de equipos y proveedores
-              </li>
-
-
-              <li>
-                Dirección y acompañamiento en rodaje
-              </li>
-
-
-              <li>
-                Seguimiento de postproducción
-              </li>
-
-
-            </ul>
-
+            <p class="service-skills">
+              Conceptualización · Preproducción · Dirección en set ·
+              Talentos &amp; locaciones · Coordinación de equipos ·
+              Postproducción
+            </p>
 
           </article>
 
-
         </div>
 
 
+        <!-- ECOSISTEMA -->
 
-        <!-- MI ECOSISTEMA DE TRABAJO -->
-        <div class="work-ecosystem">
+        <div class="ecosystem reveal">
 
-
-          <p class="work-ecosystem-title">
-            MI ECOSISTEMA DE TRABAJO
+          <p class="eyebrow centered">
+            ECOSISTEMA DE TRABAJO
           </p>
 
+          <div class="ecosystem-box">
 
-          <div class="tool-pills">
+            <div class="ecosystem-line">
 
+              <span>✦ Google Analytics 4</span>
+              <span>✦ Looker Studio</span>
+              <span>✦ Google Search Console</span>
+              <span>✦ Meta Ads</span>
+              <span>✦ Google Ads</span>
+              <span>✦ Meta Business Suite</span>
+              <span>✦ Metricool</span>
 
-            <span class="tool-pill">
-              Google Analytics 4
-            </span>
+            </div>
 
+            <div class="ecosystem-line">
 
-            <span class="tool-pill">
-              Looker Studio
-            </span>
+              <span>✦ Trello</span>
+              <span>✦ Notion</span>
+              <span>✦ Canva</span>
+              <span>✦ CapCut</span>
+              <span>✦ Adobe</span>
+              <span>✦ ChatGPT</span>
+              <span>✦ Claude</span>
+              <span>✦</span>
 
-
-            <span class="tool-pill">
-              Google Search Console
-            </span>
-
-
-            <span class="tool-pill">
-              Meta Ads
-            </span>
-
-
-            <span class="tool-pill">
-              Google Ads
-            </span>
-
-
-            <span class="tool-pill">
-              Meta Business Suite
-            </span>
-
-
-            <span class="tool-pill">
-              Metricool
-            </span>
-
-
-            <span class="tool-pill">
-              Trello
-            </span>
-
-
-            <span class="tool-pill">
-              Notion
-            </span>
-
-
-            <span class="tool-pill">
-              Canva
-            </span>
-
-
-            <span class="tool-pill">
-              CapCut
-            </span>
-
-
-            <span class="tool-pill">
-              Adobe
-            </span>
-
-
-            <span class="tool-pill">
-              ChatGPT
-            </span>
-
-
-            <span class="tool-pill">
-              Claude
-            </span>
-
+            </div>
 
           </div>
 
-
         </div>
-
 
       </div>
 
@@ -1781,103 +1322,126 @@
 
 
 
-    <!-- ========================================
-         09 — CONTACTO
-    ========================================= -->
+    <!-- ======================================================
+         CONTACTO
+    ======================================================= -->
 
-    <section
-      id="contacto"
-      class="contact section"
-    >
+    <section id="contacto" class="contact section">
 
-      <div class="container contact-inner">
+      <div class="section-inner">
 
-
-        <!-- ENCABEZADO -->
-        <div class="contact-heading">
+        <p class="eyebrow reveal">
+          CONVERSEMOS
+        </p>
 
 
-          <p class="eyebrow">
-            CONECTEMOS
-          </p>
-
+        <div class="contact-card reveal">
 
           <h2>
-
-            Las buenas ideas merecen encontrar
-
-            <span>
-              su próximo lugar.
-            </span>
-
+            TU PROYECTO PODRÍA SER EL SIGUIENTE
           </h2>
 
-
-        </div>
-
-
-
-        <!-- TEXTO -->
-        <div class="contact-copy">
-
-
-          <p>
-            Abierta a nuevos retos en Social Media, Content, Account Management
-            y proyectos freelance con marcas que quieran convertir buenas ideas
-            en acciones.
+          <p class="contact-intro">
+            Si tienes una idea, hablemos de cómo hacerla realidad.
           </p>
 
 
-        </div>
-
-
-
-        <!-- CTA -->
-        <div class="contact-cta">
-
+          <!--
+            IMPORTANTE:
+            Después ponemos aquí tu enlace real de WhatsApp.
+          -->
 
           <a
             href="#"
-            class="contact-whatsapp whatsapp-link"
-            target="_blank"
-            rel="noopener noreferrer"
+            class="button contact-whatsapp"
+            aria-label="Contactar por WhatsApp"
           >
-            Hablemos por WhatsApp →
+            WHATSAPP ↗
           </a>
 
 
+          <div class="contact-alternatives">
+
+            <span>o escríbeme por:</span>
+
+            <a
+              href="#"
+              class="contact-link"
+              aria-label="Enviar email"
+            >
+              EMAIL
+            </a>
+
+            <a
+              href="#"
+              class="contact-link"
+              aria-label="Visitar LinkedIn"
+            >
+              LinkedIn
+            </a>
+
+          </div>
+
         </div>
-
-
-
-        <!-- FIRMA -->
-        <div class="contact-signature">
-
-
-          <p>
-            Todo empezó con una idea. Como casi todo lo que me gusta hacer.
-          </p>
-
-
-        </div>
-
 
       </div>
 
     </section>
-
 
   </main>
 
 
 
-  <!-- ========================================
-       INTERACCIONES
-  ========================================= -->
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <div class="footer-person">
+
+        <strong>Paula Valenzuela</strong>
+
+        <p>
+          Marketing Digital · Comunicadora Social
+        </p>
+
+      </div>
+
+
+      <div class="footer-location">
+
+        <span>Ubicación</span>
+
+        <p>Bogotá D.C.</p>
+        <p>Remoto · Internacional</p>
+
+      </div>
+
+
+      <div class="footer-ending">
+
+        <span>© 2026</span>
+
+        <p>
+          <em>
+            Todo empezó con una idea, como casi todo lo que me gusta hacer.
+          </em>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
 
   <script src="script.js"></script>
 
-
 </body>
-
 </html>
