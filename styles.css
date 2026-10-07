@@ -2932,3 +2932,55 @@ strong {
     transform: none;
   }
 }
+
+/* =========================================================
+   MICROINTERACCIONES — TARJETAS
+========================================================= */
+
+.stat-card,
+.metric-card,
+.strategy-card,
+.service-card,
+.result-card,
+.sea-evolution-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.stat-card:hover,
+.metric-card:hover,
+.strategy-card:hover,
+.service-card:hover,
+.result-card:hover,
+.sea-evolution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(90, 33, 54, 0.10);
+}
+
+/* Un poquito más sutil para las tarjetas oscuras */
+.metric-card:hover {
+  box-shadow: 0 14px 30px rgba(90, 33, 54, 0.16);
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .metric-card,
+  .strategy-card,
+  .service-card,
+  .result-card,
+  .sea-evolution-card {
+    transition: none;
+  }
+
+  .stat-card:hover,
+  .metric-card:hover,
+  .strategy-card:hover,
+  .service-card:hover,
+  .result-card:hover,
+  .sea-evolution-card:hover {
+    transform: none;
+  }
+}
