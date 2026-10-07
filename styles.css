@@ -3212,3 +3212,11 @@ strong {
   object-position: center bottom;
   margin: 0 auto;
 }
+
+/* HOME — AJUSTE ASIMÉTRICO DEL ARCO */
+
+.hero-photo-group .hero-photo-placeholder {
+  clip-path: none;
+  border-radius: 48% 48% 0 0;
+  clip-path: inset(0 6% 0 0 round 48% 48% 0 0);
+}
