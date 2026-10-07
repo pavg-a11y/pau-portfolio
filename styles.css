@@ -2785,3 +2785,27 @@ strong {
       rgba(231, 198, 209, 0.26) 100%
     );
 }
+
+/* =========================================================
+   27. TRANSICIÓN VISUAL ENTRE SECCIONES
+========================================================= */
+
+/* 02 · TRAYECTORIA PROFESIONAL */
+.trajectory {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(231, 198, 209, 0.22) 0%,
+      rgba(246, 234, 240, 0.82) 100%
+    );
+}
+
+/* 03 · PROYECTOS DESTACADOS */
+.projects {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(246, 234, 240, 0.96) 0%,
+      rgba(192, 139, 160, 0.10) 100%
+    );
+}
