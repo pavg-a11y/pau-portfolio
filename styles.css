@@ -2844,9 +2844,11 @@ strong {
 .hero-identity {
   position: absolute;
   top: calc(100% + 14px);
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
   text-align: center;
 }
 
