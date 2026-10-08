@@ -3418,6 +3418,25 @@ strong {
   }
 }
 
+/* CENTRAR CONTENIDO DE LAS 3 TARJETAS DE SERVICIOS */
+
+.service-card {
+  text-align: center;
+  align-items: center;
+}
+
+.service-number,
+.service-card h3,
+.service-card > p {
+  width: 100%;
+  text-align: center;
+}
+
+.service-skills {
+  width: 100%;
+  text-align: center;
+}
+
 
 
 
