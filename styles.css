@@ -3340,3 +3340,29 @@ strong {
 }
 
 
+/* SAN ANDRÉS - TEXTO CENTRADO SOBRE LAS 3 FOTOS */
+
+.production-story {
+  display: block;
+  margin-top: 45px;
+}
+
+.production-story-copy {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.production-story-copy p {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bts-gallery {
+  margin-top: 35px;
+}
+
+
+
