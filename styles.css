@@ -3395,5 +3395,15 @@ strong {
 }
 
 
+/* ALINEAR CÁPSULAS CON EL TEXTO DE SOBRE MÍ */
+
+@media (min-width: 901px) {
+  .about-stats {
+    margin-top: 140px;
+  }
+}
+
+
+
 
 
