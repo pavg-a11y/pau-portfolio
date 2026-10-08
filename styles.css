@@ -3247,3 +3247,25 @@ strong {
   margin: 0 auto;
   transform: translateX(3%);
 }
+
+
+/* AQUAMARE - PORTADAS UNIFORMES */
+
+.aquamare-carousel .media-card {
+  overflow: hidden;
+}
+
+.aquamare-carousel .media-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.aquamare-carousel .media-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
