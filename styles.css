@@ -3399,10 +3399,24 @@ strong {
 
 @media (min-width: 901px) {
   .about-stats {
-    margin-top: 270px;
+    margin-top: 300px;
   }
 }
 
+
+/* AJUSTE TÍTULO BOGOTÁ */
+
+@media (min-width: 901px) {
+  .bogota-story {
+    align-items: center;
+  }
+
+  .bogota-story h3 {
+    font-size: clamp(58px, 4.5vw, 82px);
+    line-height: 1.05;
+    margin: 0;
+  }
+}
 
 
 
