@@ -3458,4 +3458,20 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* CENTRAR TÍTULO CREAR TAMBIÉN ES ESTAR AHÍ */
+
+@media (min-width: 901px) {
+  .bogota-story > h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .bogota-story > h3 em {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
 
