@@ -3524,8 +3524,8 @@ border: 1px solid #DFB8C7;
 
 @media (min-width: 901px) {
   #inicio .hero-photo-group .hero-photo-placeholder {
-    top: 35px;
-    height: calc(100% - 35px);
+    top: 45px;
+    height: calc(100% - 45px);
     bottom: 0;
   }
 }
