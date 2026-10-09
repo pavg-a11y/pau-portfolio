@@ -3774,6 +3774,29 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* ESTRATEGIA DIGITAL - CENTRAR TEXTOS SOLO EN MOBILE */
+
+@media (max-width: 650px) {
+
+  /* Párrafo que comienza con "Cada cuenta..." */
+  .strategy-intro > p:last-child {
+    text-align: center;
+    text-align-last: center;
+    hyphens: none;
+  }
+
+  /* Textos dentro de las cuatro cápsulas */
+  .strategy-card p,
+  .strategy-step p {
+    text-align: center;
+    text-align-last: center;
+    hyphens: none;
+  }
+
+}
+
+
+
 
 
 
