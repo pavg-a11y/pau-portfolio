@@ -3744,6 +3744,23 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* AJUSTE FINAL TITULO ESTRATEGIA - SOLO MOBILE */
+
+@media (max-width: 650px) {
+  .strategy-intro h2 {
+    max-width: 100%;
+    font-size: clamp(2rem, 8.2vw, 2.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.055em;
+    text-align: center;
+    text-wrap: balance;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
 
 
 
