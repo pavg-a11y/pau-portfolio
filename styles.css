@@ -3498,6 +3498,17 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* HOME - SUBIR FOTO, NOMBRE Y PROFESIÓN */
+
+@media (min-width: 901px) {
+  #inicio .hero-visual {
+    position: relative;
+    top: -100px;
+  }
+}
+
+
+
 
 
 
