@@ -3823,6 +3823,58 @@ border: 1px solid #DFB8C7;
   }
 }
 
+/* TÍTULO AUDIOVISUAL - SOLO MOBILE */
+@media (max-width: 650px) {
+  .audiovisual-title {
+    width: 100%;
+    margin: 55px auto 55px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .audiovisual-title .title-mobile {
+    display: block;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(34px, 8.5vw, 42px);
+    line-height: 1.08;
+    text-align: center;
+  }
+
+  .audiovisual-title .title-mobile span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+/* BOGOTÁ - TÍTULO SOLO MOBILE */
+@media (max-width: 650px) {
+  .bogota-story {
+    align-items: center;
+  }
+
+  .bogota-story h3 {
+    width: 100%;
+    margin: 55px auto;
+    font-size: clamp(52px, 12vw, 64px);
+    line-height: 1.02;
+    text-align: center;
+  }
+
+  .bogota-story h3 em {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* HOME - SUBIR FOTO SOLO EN MOBILE */
+@media (max-width: 650px) {
+  #inicio .hero-visual {
+    transform: translateY(-45px);
+  }
+}
+
 
 
 
