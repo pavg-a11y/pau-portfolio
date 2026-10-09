@@ -3795,6 +3795,34 @@ border: 1px solid #DFB8C7;
 
 }
 
+/* TÍTULO AUDIOVISUAL - DESKTOP */
+.audiovisual-title .title-mobile {
+  display: none;
+}
+
+/* TÍTULO AUDIOVISUAL - MOBILE */
+@media (max-width: 650px) {
+
+  .audiovisual-title .title-desktop {
+    display: none;
+  }
+
+  .audiovisual-title .title-mobile {
+    display: block;
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(30px, 7vw, 42px);
+    line-height: 1.12;
+    text-align: center;
+  }
+
+  .audiovisual-title .title-mobile span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
 
 
 
