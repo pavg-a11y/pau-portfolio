@@ -3476,9 +3476,11 @@ border: 1px solid #DFB8C7;
 
 
 
-/* FOOTER - FRASE DISCRETA Y ALINEADA A LA DERECHA */
+
+/* FOOTER - FRASE MÁS PEQUEÑA Y DISCRETA */
 
 @media (min-width: 901px) {
+
   .footer-ending {
     min-width: 0;
     width: 100%;
@@ -3489,11 +3491,12 @@ border: 1px solid #DFB8C7;
   .footer-ending p,
   .footer-ending p em {
     font-family: 'Manrope', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0;
+    color: #D9AEBF;
     text-align: right;
   }
 
@@ -3501,7 +3504,9 @@ border: 1px solid #DFB8C7;
     max-width: 100%;
     margin: 12px 0 0 auto;
     white-space: normal;
+    overflow-wrap: normal;
   }
+
 }
 
 
