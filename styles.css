@@ -3474,25 +3474,29 @@ border: 1px solid #DFB8C7;
 
 
 
-/* FOOTER - FRASE CENTRADA Y SIN RECORTES */
+
+/* FOOTER - FRASE PEQUEÑA Y ALINEADA A LA DERECHA */
 
 @media (min-width: 901px) {
 
   .footer-ending {
     min-width: 0;
-    text-align: center;
+    text-align: right;
+    justify-self: end;
+    width: 100%;
   }
 
   .footer-ending p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.3;
+    text-align: right;
     white-space: normal;
     max-width: 100%;
-    margin: 12px auto 0;
-    text-align: center;
+    margin: 12px 0 0 auto;
   }
 
 }
+
 
 
 
