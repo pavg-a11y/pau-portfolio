@@ -3473,19 +3473,27 @@ border: 1px solid #DFB8C7;
 }
 
 
-/* FOOTER - FRASE EN UNA SOLA LÍNEA */
+
+/* FOOTER - FRASE CENTRADA Y SIN RECORTES */
 
 @media (min-width: 901px) {
+
   .footer-ending {
     min-width: 0;
+    text-align: center;
   }
 
   .footer-ending p {
-    white-space: nowrap;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.3;
+    white-space: normal;
+    max-width: 100%;
+    margin: 12px auto 0;
+    text-align: center;
   }
+
 }
+
 
 
 
