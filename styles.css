@@ -3759,6 +3759,20 @@ border: 1px solid #DFB8C7;
   }
 }
 
+/* SEA AVENUE - TÍTULO SOLO MOBILE */
+@media (max-width: 650px) {
+  .sea-evolution h3 span,
+  .sea-evolution h3 em {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sea-evolution h3 em {
+    white-space: nowrap;
+  }
+}
+
 
 
 
