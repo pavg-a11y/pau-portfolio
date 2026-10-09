@@ -3473,5 +3473,21 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* FOOTER - FRASE EN UNA SOLA LÍNEA */
+
+@media (min-width: 901px) {
+  .footer-ending {
+    min-width: 0;
+  }
+
+  .footer-ending p {
+    white-space: nowrap;
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+
+
 
 
