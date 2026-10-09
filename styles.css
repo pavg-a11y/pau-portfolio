@@ -3449,7 +3449,13 @@ background: linear-gradient(
 
 border: 1px solid #DFB8C7;
 
+/* AJUSTE HOME - SUBIR FOTO, NOMBRE Y PROFESIÓN */
 
+@media (min-width: 901px) {
+  #inicio .hero-photo-group {
+    transform: translateY(-45px);
+  }
+}
 
 
 
