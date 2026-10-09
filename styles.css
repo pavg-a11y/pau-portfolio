@@ -3046,13 +3046,13 @@ strong {
 @media (max-width: 650px) {
 
   .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 42px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 
-    width: 100%;
-    padding: 48px 6% 70px;
-  }
+  width: 100%;
+  padding: 48px 6% 70px;
+}
 
   .hero-content {
     width: 100%;
