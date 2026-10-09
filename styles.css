@@ -3716,19 +3716,35 @@ border: 1px solid #DFB8C7;
 }
 
 
-/* ESTRATEGIA - TITULO EN TRES LINEAS */
+/* VOLVER A CENTRAR TEXTOS - SOLO MOBILE */
+
 @media (max-width: 650px) {
-  .strategy-intro h2 {
-    max-width: 100%;
-    font-size: clamp(2rem, 8.2vw, 2.7rem);
-    line-height: 1.08;
-    letter-spacing: -0.055em;
+
+  /* BAHÍA SARDINA */
+  .case-study-copy p {
     text-align: center;
-    text-wrap: balance;
-    margin-left: auto;
-    margin-right: auto;
+    text-align-last: center;
+    hyphens: none;
   }
+
+  /* PRODUCCIÓN AUDIOVISUAL - SAN ANDRÉS */
+  .production-story-copy p {
+    text-align: center;
+    text-align-last: center;
+    hyphens: none;
+  }
+
+  /* PRODUCCIÓN AUDIOVISUAL - BOGOTÁ */
+  .bogota-story p {
+    text-align: center;
+    text-align-last: center;
+    hyphens: none;
+  }
+
 }
+
+
+
 
 
 
