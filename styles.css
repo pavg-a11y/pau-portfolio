@@ -3875,6 +3875,14 @@ border: 1px solid #DFB8C7;
   }
 }
 
+/* HOME - IGUALAR TAMAÑO DEL TÍTULO SOLO MOBILE */
+@media (max-width: 650px) {
+  #inicio .hero h1 em {
+    font-size: 1em;
+    line-height: 1;
+  }
+}
+
 
 
 
