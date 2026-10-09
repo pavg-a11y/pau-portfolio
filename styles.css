@@ -3438,5 +3438,18 @@ strong {
 }
 
 
+/* DEGRADADO SUAVE PARA LOS 4 CUADROS */
+
+background: linear-gradient(
+  135deg,
+  #F3E1E8 0%,
+  #E8C8D3 55%,
+  #E4C1CE 100%
+);
+
+border: 1px solid #DFB8C7;
+
+
+
 
 
