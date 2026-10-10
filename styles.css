@@ -3942,19 +3942,34 @@ border: 1px solid #DFB8C7;
 }
 
 
-/* SECCIÓN 04 - DISEÑO CENTRADO SOLO DESKTOP */
+
+/* SECCIÓN 04 - CORRECCIÓN DE DISTRIBUCIÓN DESKTOP */
 @media (min-width: 901px) {
 
-  /* Título en tres líneas */
-  .strategy-title {
+  .strategy-section {
     width: 100%;
-    margin: 0 auto 42px;
+  }
+
+  .strategy-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    gap: 48px;
+    align-items: center;
+  }
+
+  .strategy-intro {
+    min-width: 0;
     text-align: center;
+  }
+
+  .strategy-title {
     font-family: 'Manrope', sans-serif;
-    font-size: clamp(44px, 3.7vw, 68px);
+    font-size: clamp(34px, 3.2vw, 58px);
     font-weight: 800;
     line-height: 1.12;
     letter-spacing: -0.045em;
+    text-align: center;
+    margin: 0 0 32px;
   }
 
   .strategy-title span {
@@ -3962,22 +3977,29 @@ border: 1px solid #DFB8C7;
     white-space: nowrap;
   }
 
-  /* Centrar los textos de las cuatro cápsulas */
+  .strategy-intro p {
+    text-align: center;
+  }
+
+  .strategy-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    min-width: 0;
+  }
+
   .strategy-card {
+    min-width: 0;
+    padding: 32px 28px;
     text-align: center;
   }
 
   .strategy-card p {
     text-align: center;
-    text-wrap: pretty;
-  }
-
-  /* Centrar los números */
-  .strategy-card .strategy-number {
-    display: block;
-    text-align: center;
+    line-height: 1.65;
   }
 }
+
 
 
 
