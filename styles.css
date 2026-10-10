@@ -3886,6 +3886,57 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* RESTAURAR TARJETAS DE RESULTADOS AVIA */
+#trayectoria .avia-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+#trayectoria .avia-card {
+  min-width: 0;
+  padding: 24px 12px;
+  border: 1px solid #D9AEBF;
+  border-radius: 22px;
+  text-align: center;
+}
+
+#trayectoria .avia-card h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#trayectoria .avia-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  #trayectoria .avia-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  #trayectoria .avia-card {
+    padding: 20px 10px;
+  }
+
+  #trayectoria .avia-card h3 {
+    font-size: 24px;
+  }
+
+  #trayectoria .avia-card p {
+    font-size: 12px;
+  }
+}
+
+
+
 
 
 
