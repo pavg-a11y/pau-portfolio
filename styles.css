@@ -3942,6 +3942,45 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* SECCIÓN 04 - DISEÑO CENTRADO SOLO DESKTOP */
+@media (min-width: 901px) {
+
+  /* Título en tres líneas */
+  .strategy-title {
+    width: 100%;
+    margin: 0 auto 42px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(44px, 3.7vw, 68px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+  }
+
+  .strategy-title span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  /* Centrar los textos de las cuatro cápsulas */
+  .strategy-card {
+    text-align: center;
+  }
+
+  .strategy-card p {
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  /* Centrar los números */
+  .strategy-card .strategy-number {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
 
 
 
