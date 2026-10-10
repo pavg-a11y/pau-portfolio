@@ -4002,34 +4002,47 @@ border: 1px solid #DFB8C7;
 
 
 
-/* SECCIÓN 04 - TÍTULO DESKTOP SIN DESBORDAMIENTO */
+
+/* SECCIÓN 04 - AJUSTE FINAL DESKTOP */
 @media (min-width: 901px) {
+
+  /* Subir el encabezado 04 */
   .strategy-intro {
+    position: relative;
+    top: -35px;
     min-width: 0;
-    overflow: visible;
+    text-align: center;
   }
 
+  /* Título más grande y centrado */
   .strategy-intro .strategy-title {
     display: block;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto 30px;
+    margin: 30px auto 32px;
     padding: 0;
     font-family: 'Manrope', sans-serif;
-    font-size: clamp(26px, 2.5vw, 38px) !important;
+    font-size: clamp(38px, 3.1vw, 48px) !important;
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.12;
     letter-spacing: -0.045em;
     text-align: center;
   }
 
+  /* Conservar las tres líneas */
   .strategy-intro .strategy-title span {
     display: block;
     width: 100%;
-    white-space: normal;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  /* Centrar el párrafo */
+  .strategy-intro > p:last-child {
     text-align: center;
   }
 }
+
 
 
 
