@@ -3886,6 +3886,7 @@ border: 1px solid #DFB8C7;
 }
 
 
+
 /* RESTAURAR TARJETAS DE RESULTADOS AVIA */
 #trayectoria .avia-stats {
   display: grid;
@@ -3896,26 +3897,31 @@ border: 1px solid #DFB8C7;
 
 #trayectoria .avia-card {
   min-width: 0;
-  padding: 24px 12px;
-  border: 1px solid #D9AEBF;
+  padding: 26px 14px;
+  background-color: #572039;
+  border: 1px solid #572039;
   border-radius: 22px;
   text-align: center;
 }
 
 #trayectoria .avia-card h3 {
-  margin: 0 0 10px;
-  font-size: 28px;
+  margin: 0 0 12px;
+  color: #FFFFFF;
+  font-size: 34px;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
 
 #trayectoria .avia-card p {
   margin: 0;
+  color: #FFFFFF;
   font-size: 13px;
   line-height: 1.6;
   text-align: center;
 }
 
+/* CÁPSULAS AVIA - SOLO MOBILE */
 @media (max-width: 650px) {
   #trayectoria .avia-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3927,13 +3933,14 @@ border: 1px solid #DFB8C7;
   }
 
   #trayectoria .avia-card h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   #trayectoria .avia-card p {
     font-size: 12px;
   }
 }
+
 
 
 
