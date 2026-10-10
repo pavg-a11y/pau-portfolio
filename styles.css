@@ -3959,6 +3959,67 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* SECCIÓN 04 - RESTAURAR DISEÑO CENTRADO DESKTOP */
+@media (min-width: 901px) {
+
+  /* Columna izquierda */
+  .strategy-intro {
+    position: static !important;
+    transform: none !important;
+    min-width: 0;
+    text-align: center !important;
+  }
+
+  /* Mantener el 04 arriba */
+  .strategy-intro .eyebrow {
+    text-align: left !important;
+  }
+
+  /* Título centrado y proporcionado */
+  .strategy-intro .strategy-title {
+    width: 100%;
+    max-width: 100%;
+    margin: 85px auto 28px !important;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(30px, 2.8vw, 43px) !important;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+    text-align: center !important;
+  }
+
+  /* Tres líneas */
+  .strategy-intro .strategy-title span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center !important;
+  }
+
+  /* Párrafo centrado */
+  .strategy-intro > p:last-child {
+    max-width: 560px;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  /* Cápsulas centradas */
+  .strategy-card,
+  .strategy-card * {
+    text-align: center !important;
+  }
+
+  .strategy-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
 
 
 
