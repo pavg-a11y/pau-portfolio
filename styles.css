@@ -4001,6 +4001,30 @@ border: 1px solid #DFB8C7;
 }
 
 
+/* SECCIÓN 04 - CORREGIR SOLO EL TÍTULO EN DESKTOP */
+@media (min-width: 901px) {
+  .strategy-title {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto 32px;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(28px, 2.65vw, 48px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.045em;
+    text-align: center;
+  }
+
+  .strategy-title span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+
+
 
 
 
