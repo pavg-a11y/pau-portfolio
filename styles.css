@@ -4018,6 +4018,20 @@ border: 1px solid #DFB8C7;
   }
 }
 
+/* SOBRE MÍ - TÍTULO EN DOS LÍNEAS */
+@media (min-width: 901px) {
+  #sobre-mi .about-title {
+    font-size: clamp(42px, 4.3vw, 68px);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+  }
+
+  #sobre-mi .about-title span,
+  #sobre-mi .about-title em {
+    display: block;
+  }
+}
+
 
 
 
